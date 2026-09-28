@@ -1,11 +1,11 @@
 <!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Storico previsioni</title><style>body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:0;background:#fafafa;color:#1b1b1b}main{max-width:980px;margin:0 auto;padding:16px}h1{font-size:22px}h2{font-size:17px;margin-top:28px}.warn{background:#fff4e5;border-left:4px solid #e08a00;padding:10px 12px}table{border-collapse:collapse;width:100%;font-size:13px;background:#fff}th,td{border:1px solid #ddd;padding:5px 7px;text-align:left}th{background:#f0f0f0}.wrap{overflow-x:auto}code{font-size:12px}@media (prefers-color-scheme:dark){body{background:#151515;color:#e6e6e6}table{background:#1e1e1e}th{background:#2a2a2a}th,td{border-color:#333}.warn{background:#3a2a10}}</style></head><body><main><h1>Storico verificabile delle previsioni</h1>
-<p>Aggiornato: 2026-09-28T16:32:24Z (UTC). Tutte le previsioni registrate prima del calcio d'inizio, comprese quelle sbagliate. Scarica: <a href='storico.csv'>storico completo (CSV)</a> · <a href='integrita.csv'>catena di integrità</a>.</p>
+<p>Aggiornato: 2026-09-28T16:35:20Z (UTC). Tutte le previsioni registrate prima del calcio d'inizio, comprese quelle sbagliate. Scarica: <a href='storico.csv'>storico completo (CSV)</a> · <a href='integrita.csv'>catena di integrità</a>.</p>
 <p class='warn'>Sperimentale: nessun vantaggio sul mercato è dimostrato. Non è un invito a scommettere. Gioco vietato ai minori di 18 anni.</p>
 <h2>Test pre-registrato: il modello batte il mercato?</h2><p>Partite con esito 0/1000. Decisione solo al raggiungimento della quota.</p>
-<h2>Riepilogo</h2><div class='wrap'><table><tr><th>Prodotto</th><th>Valutate</th><th>In attesa</th><th>RPS modello</th><th>Differenza con il mercato pre-partita</th><th>Lettura</th></tr>
-<tr><td>Probabilità 22 divisioni (Dixon-Coles congelato, solo registro)</td><td>0</td><td>1</td><td>—</td><td>—</td><td>— · campione insufficiente</td></tr>
-<tr><td>Probabilità Serie A / Premier League (Dixon-Coles congelato, demo)</td><td>0</td><td>0</td><td>—</td><td>—</td><td>— · campione insufficiente</td></tr>
-<tr><td>Probabilità nazionali (configurazione NAT-2, demo)</td><td>18</td><td>18</td><td>0.169</td><td>-0.063</td><td>intervallo non calcolabile (meno di 5 date di gioco) · campione insufficiente</td></tr>
+<h2>Riepilogo</h2><div class='wrap'><table><tr><th>Prodotto</th><th>Valutate</th><th>In attesa</th><th>RPS modello</th><th>Confronto con</th><th>Differenza modello − benchmark</th><th>Lettura</th></tr>
+<tr><td>Probabilità 22 divisioni (Dixon-Coles congelato, solo registro)</td><td>0</td><td>1</td><td>—</td><td>—</td><td>—</td><td>— · campione insufficiente</td></tr>
+<tr><td>Probabilità Serie A / Premier League (Dixon-Coles congelato, demo)</td><td>0</td><td>0</td><td>—</td><td>—</td><td>—</td><td>— · campione insufficiente</td></tr>
+<tr><td>Probabilità nazionali (configurazione NAT-2, demo)</td><td>18</td><td>18</td><td>0.169</td><td>distribuzione uniforme (nessuna quota disponibile)</td><td>-0.063</td><td>intervallo non calcolabile (meno di 5 date di gioco) · campione insufficiente</td></tr>
 </table></div><p>RPS: più basso = meglio. Differenza negativa = modello migliore del benchmark.</p>
 <h2>Integrità dei registri</h2><div class='wrap'><table><tr><th>Registro</th><th>Righe</th><th>Testa SHA-256</th><th>Controllo</th></tr>
 <tr><td>demo_serie_a_pl</td><td>0</td><td><code>—</code></td><td>ASSENTE</td></tr>
@@ -29,7 +29,7 @@
 <tr><td>2026-09-28T18:45:00Z</td><td>UEFA Nations League B</td><td>Northern Ireland – Hungary</td><td>0.308</td><td>0.332</td><td>0.359</td><td></td><td>in attesa di esito</td><td></td></tr>
 <tr><td>2026-09-28T18:45:00Z</td><td>UEFA Nations League A</td><td>Belgium – France</td><td>0.366</td><td>0.261</td><td>0.372</td><td></td><td>in attesa di esito</td><td></td></tr>
 <tr><td>2026-09-28T18:45:00Z</td><td>UEFA Nations League A</td><td>Turkey – Italy</td><td>0.300</td><td>0.263</td><td>0.435</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-09-28T18:30:00Z</td><td>SP2</td><td>Leganes – Castellon</td><td>0.323</td><td>0.279</td><td>0.397</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T18:30:00Z</td><td>Spagna - Segunda</td><td>Leganes – Castellon</td><td>0.323</td><td>0.279</td><td>0.397</td><td></td><td>in attesa di esito</td><td></td></tr>
 <tr><td>2026-09-28T16:00:00Z</td><td>UEFA Nations League C</td><td>Armenia – Montenegro</td><td>0.356</td><td>0.270</td><td>0.372</td><td></td><td>in attesa di esito</td><td></td></tr>
 <tr><td>2026-09-28T16:00:00Z</td><td>UEFA Nations League C</td><td>Latvia – Cyprus</td><td>0.388</td><td>0.309</td><td>0.302</td><td></td><td>in attesa di esito</td><td></td></tr>
 <tr><td>2026-09-28T16:00:00Z</td><td>UEFA Nations League B</td><td>Georgia – Ukraine</td><td>0.335</td><td>0.273</td><td>0.391</td><td></td><td>in attesa di esito</td><td></td></tr>
