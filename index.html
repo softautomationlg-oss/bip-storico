@@ -1,0 +1,54 @@
+<!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Storico previsioni</title><style>body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:0;background:#fafafa;color:#1b1b1b}main{max-width:980px;margin:0 auto;padding:16px}h1{font-size:22px}h2{font-size:17px;margin-top:28px}.warn{background:#fff4e5;border-left:4px solid #e08a00;padding:10px 12px}table{border-collapse:collapse;width:100%;font-size:13px;background:#fff}th,td{border:1px solid #ddd;padding:5px 7px;text-align:left}th{background:#f0f0f0}.wrap{overflow-x:auto}code{font-size:12px}@media (prefers-color-scheme:dark){body{background:#151515;color:#e6e6e6}table{background:#1e1e1e}th{background:#2a2a2a}th,td{border-color:#333}.warn{background:#3a2a10}}</style></head><body><main><h1>Storico verificabile delle previsioni</h1>
+<p>Aggiornato: 2026-09-28T16:32:24Z (UTC). Tutte le previsioni registrate prima del calcio d'inizio, comprese quelle sbagliate. Scarica: <a href='storico.csv'>storico completo (CSV)</a> · <a href='integrita.csv'>catena di integrità</a>.</p>
+<p class='warn'>Sperimentale: nessun vantaggio sul mercato è dimostrato. Non è un invito a scommettere. Gioco vietato ai minori di 18 anni.</p>
+<h2>Test pre-registrato: il modello batte il mercato?</h2><p>Partite con esito 0/1000. Decisione solo al raggiungimento della quota.</p>
+<h2>Riepilogo</h2><div class='wrap'><table><tr><th>Prodotto</th><th>Valutate</th><th>In attesa</th><th>RPS modello</th><th>Differenza con il mercato pre-partita</th><th>Lettura</th></tr>
+<tr><td>Probabilità 22 divisioni (Dixon-Coles congelato, solo registro)</td><td>0</td><td>1</td><td>—</td><td>—</td><td>— · campione insufficiente</td></tr>
+<tr><td>Probabilità Serie A / Premier League (Dixon-Coles congelato, demo)</td><td>0</td><td>0</td><td>—</td><td>—</td><td>— · campione insufficiente</td></tr>
+<tr><td>Probabilità nazionali (configurazione NAT-2, demo)</td><td>18</td><td>18</td><td>0.169</td><td>-0.063</td><td>intervallo non calcolabile (meno di 5 date di gioco) · campione insufficiente</td></tr>
+</table></div><p>RPS: più basso = meglio. Differenza negativa = modello migliore del benchmark.</p>
+<h2>Integrità dei registri</h2><div class='wrap'><table><tr><th>Registro</th><th>Righe</th><th>Testa SHA-256</th><th>Controllo</th></tr>
+<tr><td>demo_serie_a_pl</td><td>0</td><td><code>—</code></td><td>ASSENTE</td></tr>
+<tr><td>nazionali</td><td>36</td><td><code>625374f47e17ff4302ec2df9e6bc968ae5fff4dbf64c8325bd076ebe46fcae4d</code></td><td>OK</td></tr>
+<tr><td>c4free_v2_pubblicati</td><td>0</td><td><code>—</code></td><td>ASSENTE</td></tr>
+<tr><td>modello_multilega</td><td>1</td><td><code>1470e283c86358e969325ff2f803bce43320aafb74bdcbd203328ab7399d523f</code></td><td>OK</td></tr>
+</table></div>
+<h2>Ultime 37 previsioni</h2><div class='wrap'><table><tr><th>Calcio d'inizio (UTC)</th><th>Competizione</th><th>Partita</th><th>1</th><th>X</th><th>2</th><th>Esito</th><th>Stato</th><th>RPS</th></tr>
+<tr><td>2026-09-29T18:45:00Z</td><td>UEFA Nations League B</td><td>Slovenia – North Macedonia</td><td>0.533</td><td>0.297</td><td>0.169</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T18:45:00Z</td><td>UEFA Nations League C</td><td>San Marino – Albania</td><td>0.011</td><td>0.083</td><td>0.905</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T18:45:00Z</td><td>UEFA Nations League C</td><td>Slovakia – Kazakhstan</td><td>0.667</td><td>0.221</td><td>0.110</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T18:45:00Z</td><td>UEFA Nations League C</td><td>Bulgaria – Estonia</td><td>0.478</td><td>0.288</td><td>0.232</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T18:45:00Z</td><td>UEFA Nations League C</td><td>Luxembourg – Iceland</td><td>0.247</td><td>0.282</td><td>0.470</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T18:45:00Z</td><td>UEFA Nations League A</td><td>Spain – Croatia</td><td>0.717</td><td>0.188</td><td>0.093</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T18:45:00Z</td><td>UEFA Nations League A</td><td>Czech Republic – England</td><td>0.152</td><td>0.212</td><td>0.635</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T18:45:00Z</td><td>UEFA Nations League B</td><td>Scotland – Switzerland</td><td>0.250</td><td>0.272</td><td>0.476</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T16:00:00Z</td><td>UEFA Nations League C</td><td>Finland – Belarus</td><td>0.599</td><td>0.242</td><td>0.158</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-29T16:00:00Z</td><td>UEFA Nations League C</td><td>Moldova – Faroe Islands</td><td>0.304</td><td>0.325</td><td>0.370</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T18:45:00Z</td><td>UEFA Nations League B</td><td>Romania – Bosnia and Herzegovina</td><td>0.543</td><td>0.269</td><td>0.186</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T18:45:00Z</td><td>UEFA Nations League B</td><td>Sweden – Poland</td><td>0.500</td><td>0.238</td><td>0.261</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T18:45:00Z</td><td>UEFA Nations League B</td><td>Northern Ireland – Hungary</td><td>0.308</td><td>0.332</td><td>0.359</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T18:45:00Z</td><td>UEFA Nations League A</td><td>Belgium – France</td><td>0.366</td><td>0.261</td><td>0.372</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T18:45:00Z</td><td>UEFA Nations League A</td><td>Turkey – Italy</td><td>0.300</td><td>0.263</td><td>0.435</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T18:30:00Z</td><td>SP2</td><td>Leganes – Castellon</td><td>0.323</td><td>0.279</td><td>0.397</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T16:00:00Z</td><td>UEFA Nations League C</td><td>Armenia – Montenegro</td><td>0.356</td><td>0.270</td><td>0.372</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T16:00:00Z</td><td>UEFA Nations League C</td><td>Latvia – Cyprus</td><td>0.388</td><td>0.309</td><td>0.302</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-28T16:00:00Z</td><td>UEFA Nations League B</td><td>Georgia – Ukraine</td><td>0.335</td><td>0.273</td><td>0.391</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-09-27T18:45:00Z</td><td>UEFA Nations League A</td><td>Germany – Greece</td><td>0.639</td><td>0.211</td><td>0.148</td><td>A</td><td>valutata</td><td>0.5667</td></tr>
+<tr><td>2026-09-27T18:45:00Z</td><td>UEFA Nations League A</td><td>Norway – Portugal</td><td>0.289</td><td>0.243</td><td>0.467</td><td>A</td><td>valutata</td><td>0.1836</td></tr>
+<tr><td>2026-09-27T18:45:00Z</td><td>UEFA Nations League B</td><td>Israel – Republic of Ireland</td><td>0.421</td><td>0.279</td><td>0.298</td><td>A</td><td>valutata</td><td>0.3348</td></tr>
+<tr><td>2026-09-27T16:00:00Z</td><td>UEFA Nations League A</td><td>Denmark – Wales</td><td>0.627</td><td>0.240</td><td>0.131</td><td>H</td><td>valutata</td><td>0.0780</td></tr>
+<tr><td>2026-09-27T16:00:00Z</td><td>UEFA Nations League B</td><td>Austria – Kosovo</td><td>0.586</td><td>0.241</td><td>0.171</td><td>H</td><td>valutata</td><td>0.1001</td></tr>
+<tr><td>2026-09-27T16:00:00Z</td><td>UEFA Nations League D</td><td>Gibraltar – Andorra</td><td>0.262</td><td>0.408</td><td>0.328</td><td>D</td><td>valutata</td><td>0.0885</td></tr>
+<tr><td>2026-09-27T16:00:00Z</td><td>UEFA Nations League A</td><td>Serbia – Netherlands</td><td>0.208</td><td>0.236</td><td>0.554</td><td>A</td><td>valutata</td><td>0.1211</td></tr>
+<tr><td>2026-09-27T13:00:00Z</td><td>UEFA Nations League D</td><td>Lithuania – Azerbaijan</td><td>0.352</td><td>0.330</td><td>0.317</td><td>D</td><td>valutata</td><td>0.1124</td></tr>
+<tr><td>2026-09-26T18:45:00Z</td><td>UEFA Nations League A</td><td>England – Spain</td><td>0.296</td><td>0.287</td><td>0.416</td><td>A</td><td>valutata</td><td>0.2143</td></tr>
+<tr><td>2026-09-26T18:45:00Z</td><td>UEFA Nations League C</td><td>Albania – Belarus</td><td>0.552</td><td>0.288</td><td>0.159</td><td>H</td><td>valutata</td><td>0.1126</td></tr>
+<tr><td>2026-09-26T18:45:00Z</td><td>UEFA Nations League C</td><td>Slovakia – Moldova</td><td>0.813</td><td>0.138</td><td>0.048</td><td>H</td><td>valutata</td><td>0.0185</td></tr>
+<tr><td>2026-09-26T18:45:00Z</td><td>UEFA Nations League B</td><td>North Macedonia – Switzerland</td><td>0.131</td><td>0.212</td><td>0.656</td><td>A</td><td>valutata</td><td>0.0677</td></tr>
+<tr><td>2026-09-26T18:45:00Z</td><td>UEFA Nations League A</td><td>Czech Republic – Croatia</td><td>0.275</td><td>0.266</td><td>0.458</td><td>A</td><td>valutata</td><td>0.1846</td></tr>
+<tr><td>2026-09-26T16:00:00Z</td><td>UEFA Nations League C</td><td>Iceland – Estonia</td><td>0.695</td><td>0.193</td><td>0.110</td><td>D</td><td>valutata</td><td>0.2483</td></tr>
+<tr><td>2026-09-26T16:00:00Z</td><td>UEFA Nations League C</td><td>Faroe Islands – Kazakhstan</td><td>0.345</td><td>0.324</td><td>0.330</td><td>D</td><td>valutata</td><td>0.1142</td></tr>
+<tr><td>2026-09-26T16:00:00Z</td><td>UEFA Nations League C</td><td>San Marino – Finland</td><td>0.012</td><td>0.071</td><td>0.916</td><td>A</td><td>valutata</td><td>0.0035</td></tr>
+<tr><td>2026-09-26T16:00:00Z</td><td>UEFA Nations League C</td><td>Bulgaria – Luxembourg</td><td>0.439</td><td>0.312</td><td>0.248</td><td>A</td><td>valutata</td><td>0.3789</td></tr>
+<tr><td>2026-09-26T13:00:00Z</td><td>UEFA Nations League B</td><td>Slovenia – Scotland</td><td>0.369</td><td>0.332</td><td>0.297</td><td>D</td><td>valutata</td><td>0.1125</td></tr>
+</table></div></main></body></html>
