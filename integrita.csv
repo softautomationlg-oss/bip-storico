@@ -1,5 +1,5 @@
 run_utc,ledger,rows,head_sha256,check
-2026-09-28T16:35:20Z,demo_serie_a_pl,0,,ASSENTE
-2026-09-28T16:35:20Z,nazionali,36,625374f47e17ff4302ec2df9e6bc968ae5fff4dbf64c8325bd076ebe46fcae4d,OK
-2026-09-28T16:35:20Z,c4free_v2_pubblicati,0,,ASSENTE
-2026-09-28T16:35:20Z,modello_multilega,1,1470e283c86358e969325ff2f803bce43320aafb74bdcbd203328ab7399d523f,OK
+2026-10-01T08:28:04Z,demo_serie_a_pl,0,,ASSENTE
+2026-10-01T08:28:04Z,nazionali,62,372e2d19106911744109960ec96883ecca291a00dd0c0f52aa1ead41a77d19fc,OK
+2026-10-01T08:28:04Z,c4free_v2_pubblicati,0,,ASSENTE
+2026-10-01T08:28:04Z,modello_multilega,13,fbb32cd831baac39c1e1ac1eea501c4ab04493870e4f99521ab9d92a03889280,OK
