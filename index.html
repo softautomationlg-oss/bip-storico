@@ -1,317 +1,317 @@
 <!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Storico previsioni</title><style>body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:0;background:#fafafa;color:#1b1b1b}main{max-width:980px;margin:0 auto;padding:16px}h1{font-size:22px}h2{font-size:17px;margin-top:28px}.warn{background:#fff4e5;border-left:4px solid #e08a00;padding:10px 12px}table{border-collapse:collapse;width:100%;font-size:13px;background:#fff}th,td{border:1px solid #ddd;padding:5px 7px;text-align:left}th{background:#f0f0f0}.wrap{overflow-x:auto}code{font-size:12px}@media (prefers-color-scheme:dark){body{background:#151515;color:#e6e6e6}table{background:#1e1e1e}th{background:#2a2a2a}th,td{border-color:#333}.warn{background:#3a2a10}}</style></head><body><main><h1>Storico verificabile delle previsioni</h1>
-<p>Aggiornato: 2026-10-29T08:56:26Z (UTC). Tutte le previsioni registrate prima del calcio d'inizio, comprese quelle sbagliate. Scarica: <a href='storico.csv'>storico completo (CSV)</a> · <a href='integrita.csv'>catena di integrità</a>.</p>
+<p>Aggiornato: 2026-11-02T18:13:39Z (UTC). Tutte le previsioni registrate prima del calcio d'inizio, comprese quelle sbagliate. Scarica: <a href='storico.csv'>storico completo (CSV)</a> · <a href='integrita.csv'>catena di integrità</a>.</p>
 <p class='warn'>Sperimentale: nessun vantaggio sul mercato è dimostrato. Non è un invito a scommettere. Gioco vietato ai minori di 18 anni.</p>
-<h2>Test pre-registrato: il modello batte il mercato?</h2><p>Partite con esito 462/1000. Decisione solo al raggiungimento della quota.</p>
+<h2>Test pre-registrato: il modello batte il mercato?</h2><p>Partite con esito 858/1000. Decisione solo al raggiungimento della quota.</p>
 <h2>Riepilogo</h2><div class='wrap'><table><tr><th>Prodotto</th><th>Valutate</th><th>In attesa</th><th>RPS modello</th><th>Confronto con</th><th>Differenza modello − benchmark</th><th>Lettura</th></tr>
-<tr><td>Probabilità 22 divisioni (Dixon-Coles congelato, solo registro)</td><td>462</td><td>240</td><td>0.210 [0.202; 0.229]</td><td>mercato pre-partita (senza margine)</td><td>0.008 [0.002; 0.018]</td><td>modello PEGGIORE del benchmark (IC 95% interamente sopra 0)</td></tr>
-<tr><td>Probabilità Serie A / Premier League (Dixon-Coles congelato, demo)</td><td>40</td><td>30</td><td>0.217 [0.186; 0.257]</td><td>mercato pre-partita (senza margine)</td><td>0.026 [0.004; 0.055]</td><td>modello PEGGIORE del benchmark (IC 95% interamente sopra 0)</td></tr>
+<tr><td>Probabilità 22 divisioni (Dixon-Coles congelato, solo registro)</td><td>858</td><td>16</td><td>0.211 [0.204; 0.219]</td><td>mercato pre-partita (senza margine)</td><td>0.009 [0.004; 0.014]</td><td>modello PEGGIORE del benchmark (IC 95% interamente sopra 0)</td></tr>
+<tr><td>Probabilità Serie A / Premier League (Dixon-Coles congelato, demo)</td><td>87</td><td>3</td><td>0.201 [0.181; 0.222]</td><td>mercato pre-partita (senza margine)</td><td>0.011 [-0.003; 0.026]</td><td>nessuna differenza dimostrata (IC 95% comprende 0)</td></tr>
 <tr><td>Probabilità nazionali (configurazione NAT-2, demo)</td><td>88</td><td>0</td><td>0.172 [0.147; 0.200]</td><td>distribuzione uniforme (nessuna quota disponibile)</td><td>-0.057 [-0.089; -0.019]</td><td>modello MIGLIORE del benchmark (IC 95% interamente sotto 0)</td></tr>
 </table></div><p>RPS: più basso = meglio. Differenza negativa = modello migliore del benchmark.</p>
 <h2>Integrità dei registri</h2><div class='wrap'><table><tr><th>Registro</th><th>Righe</th><th>Testa SHA-256</th><th>Controllo</th></tr>
-<tr><td>demo_serie_a_pl</td><td>70</td><td><code>fb9cdfc4d751cb941a558c5a8ae6100c4e20adb7adcbbbcee5b3a83bbc2fbbdf</code></td><td>OK</td></tr>
+<tr><td>demo_serie_a_pl</td><td>90</td><td><code>4b38c079d6dbbe00a37f597df3c02a8ddd0be75e86d18284a86e344eea4437bf</code></td><td>OK</td></tr>
 <tr><td>nazionali</td><td>88</td><td><code>626a8c8fea6a867075e1e3891f887e1e7d0d90d35f10b2e44211f02d7c856dd5</code></td><td>OK</td></tr>
-<tr><td>c4free_v2_pubblicati</td><td>13</td><td><code>b4456e487867625fa072c726f11cf368efad34d70a5b38f3b50083fb82d91f18</code></td><td>OK</td></tr>
-<tr><td>modello_multilega</td><td>707</td><td><code>88fae1f0806cb02666e3d8393dddebd2c94ce4d871db961e714a4895120b20e0</code></td><td>OK</td></tr>
+<tr><td>c4free_v2_pubblicati</td><td>22</td><td><code>25a1bf9277be053bac5fcffcdae93981421526a393be8ced225399847e15c127</code></td><td>OK</td></tr>
+<tr><td>modello_multilega</td><td>884</td><td><code>9a6ed57046342be12afb3ff37dcf80e961ef4e044be0780038db2940e7da3f89</code></td><td>OK</td></tr>
 </table></div>
 <h2>Ultime 300 previsioni</h2><div class='wrap'><table><tr><th>Calcio d'inizio (UTC)</th><th>Competizione</th><th>Partita</th><th>1</th><th>X</th><th>2</th><th>Esito</th><th>Stato</th><th>RPS</th></tr>
-<tr><td>2026-10-29T19:45:00Z</td><td>Italia - Serie A</td><td>Fiorentina – Atalanta</td><td>0.262</td><td>0.250</td><td>0.486</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-29T17:30:00Z</td><td>Italia - Serie A</td><td>Frosinone – Lecce</td><td>0.561</td><td>0.240</td><td>0.197</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T20:00:00Z</td><td>Scozia - Premiership</td><td>Hearts – Rangers</td><td>0.387</td><td>0.246</td><td>0.365</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Inghilterra - National League</td><td>Carlisle – Harrogate</td><td>0.427</td><td>0.224</td><td>0.348</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Inghilterra - National League</td><td>Forest Green – Eastleigh</td><td>0.608</td><td>0.210</td><td>0.181</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Inghilterra - National League</td><td>Sutton – Aldershot</td><td>0.412</td><td>0.239</td><td>0.347</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Italia - Serie A</td><td>Genoa – Juventus</td><td>0.209</td><td>0.269</td><td>0.521</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Italia - Serie A</td><td>Monza – Napoli</td><td>0.153</td><td>0.210</td><td>0.635</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>Aberdeen – Falkirk</td><td>0.414</td><td>0.269</td><td>0.316</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>Celtic – Dundee United</td><td>0.796</td><td>0.131</td><td>0.071</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>Dundee – Kilmarnock</td><td>0.496</td><td>0.227</td><td>0.276</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>St Johnstone – Motherwell</td><td>0.305</td><td>0.272</td><td>0.421</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>St Mirren – Hibernian</td><td>0.285</td><td>0.272</td><td>0.442</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:00:00Z</td><td>Italia - Serie B</td><td>Carrarese – Arezzo</td><td>0.541</td><td>0.257</td><td>0.201</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T19:00:00Z</td><td>Italia - Serie B</td><td>Juve Stabia – Verona</td><td>0.461</td><td>0.253</td><td>0.285</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T18:00:00Z</td><td>Italia - Serie B</td><td>Pisa – Palermo</td><td>0.409</td><td>0.270</td><td>0.319</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Milan – Bologna</td><td>0.493</td><td>0.256</td><td>0.249</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Parma – Udinese</td><td>0.309</td><td>0.297</td><td>0.392</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Venezia – Inter</td><td>0.064</td><td>0.122</td><td>0.813</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Leicester – Wigan</td><td>0.461</td><td>0.270</td><td>0.268</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Luton – Doncaster</td><td>0.587</td><td>0.219</td><td>0.192</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Milton Keynes Dons – Bromley</td><td>0.600</td><td>0.212</td><td>0.187</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Oxford – Stockport</td><td>0.451</td><td>0.236</td><td>0.312</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Sheffield Weds – Cambridge</td><td>0.687</td><td>0.183</td><td>0.129</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League Two</td><td>Barnet – York</td><td>0.479</td><td>0.222</td><td>0.298</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Altrincham – Kidderminster</td><td>0.371</td><td>0.303</td><td>0.325</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Boston Utd – Gateshead</td><td>0.525</td><td>0.229</td><td>0.244</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Fylde – Hartlepool</td><td>0.477</td><td>0.246</td><td>0.275</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Halifax – Barrow</td><td>0.348</td><td>0.262</td><td>0.388</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Hornchurch – Yeovil</td><td>0.387</td><td>0.272</td><td>0.339</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Tamworth – Scunthorpe</td><td>0.384</td><td>0.229</td><td>0.386</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Wealdstone – Solihull</td><td>0.465</td><td>0.225</td><td>0.309</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Woking – Boreham Wood</td><td>0.294</td><td>0.234</td><td>0.471</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Worthing – Southend</td><td>0.446</td><td>0.228</td><td>0.325</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Italia - Serie A</td><td>Roma – Cagliari</td><td>0.667</td><td>0.213</td><td>0.119</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Italia - Serie A</td><td>Torino – Como</td><td>0.211</td><td>0.247</td><td>0.541</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Scozia - Championship</td><td>Stenhousemuir – Dunfermline</td><td>0.559</td><td>0.334</td><td>0.105</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:45:00Z</td><td>Scozia - League One</td><td>Ross County – Hamilton</td><td>0.768</td><td>0.153</td><td>0.077</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Ascoli – Sampdoria</td><td>0.497</td><td>0.331</td><td>0.171</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Cesena – Empoli</td><td>0.426</td><td>0.290</td><td>0.282</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Mantova – Cremonese</td><td>0.373</td><td>0.286</td><td>0.339</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Padova – Sudtirol</td><td>0.368</td><td>0.329</td><td>0.301</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Vicenza – Modena</td><td>0.271</td><td>0.263</td><td>0.464</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Virtus Entella – Avellino</td><td>0.389</td><td>0.312</td><td>0.297</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T18:00:00Z</td><td>Italia - Serie B</td><td>Benevento – Catanzaro</td><td>0.450</td><td>0.283</td><td>0.265</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-27T17:30:00Z</td><td>Italia - Serie A</td><td>Sassuolo – Lazio</td><td>0.279</td><td>0.259</td><td>0.460</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T20:00:00Z</td><td>Inghilterra - League Two</td><td>Walsall – Salford</td><td>0.416</td><td>0.273</td><td>0.310</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T20:00:00Z</td><td>Spagna - La Liga</td><td>Sevilla – Osasuna</td><td>0.473</td><td>0.259</td><td>0.267</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T19:45:00Z</td><td>Francia - Ligue 2</td><td>Boulogne – Reims</td><td>0.210</td><td>0.266</td><td>0.523</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T19:45:00Z</td><td>Francia - Ligue 2</td><td>Montpellier – Red Star</td><td>0.480</td><td>0.302</td><td>0.217</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T19:30:00Z</td><td>Francia - Ligue 1</td><td>Paris SG – Lyon</td><td>0.604</td><td>0.211</td><td>0.184</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T19:30:00Z</td><td>Spagna - Segunda</td><td>Andorra – Burgos</td><td>0.375</td><td>0.299</td><td>0.324</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T18:45:00Z</td><td>Portogallo - Primeira Liga</td><td>Santa Clara – Benfica</td><td>0.173</td><td>0.238</td><td>0.588</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T18:30:00Z</td><td>Turchia - Süper Lig</td><td>Galatasaray – Fenerbahce</td><td>0.495</td><td>0.231</td><td>0.273</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Besiktas – Buyuksehyr</td><td>0.490</td><td>0.258</td><td>0.250</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-26T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Rizespor – Trabzonspor</td><td>0.254</td><td>0.260</td><td>0.485</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T20:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Sp Lisbon – Academico Viseu</td><td>0.709</td><td>0.165</td><td>0.124</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T20:00:00Z</td><td>Spagna - La Liga</td><td>Barcelona – Real Madrid</td><td>0.562</td><td>0.207</td><td>0.229</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T19:45:00Z</td><td>Italia - Serie A</td><td>Udinese – Milan</td><td>0.232</td><td>0.246</td><td>0.520</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T19:00:00Z</td><td>Olanda - Eredivisie</td><td>AZ Alkmaar – Twente</td><td>0.396</td><td>0.276</td><td>0.327</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T18:15:00Z</td><td>Belgio - Pro League</td><td>St. Gilloise – Cercle Brugge</td><td>0.779</td><td>0.152</td><td>0.067</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T18:00:00Z</td><td>Grecia - Super League</td><td>OFI Crete – PAOK</td><td>0.157</td><td>0.212</td><td>0.630</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T18:00:00Z</td><td>Portogallo - Primeira Liga</td><td>Nacional – Sp Braga</td><td>0.210</td><td>0.228</td><td>0.561</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T18:00:00Z</td><td>Portogallo - Primeira Liga</td><td>Rio Ave – Famalicao</td><td>0.257</td><td>0.263</td><td>0.478</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T17:30:00Z</td><td>Belgio - Pro League</td><td>Gent – Anderlecht</td><td>0.406</td><td>0.274</td><td>0.319</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T17:30:00Z</td><td>Grecia - Super League</td><td>Aris – Atromitos</td><td>0.449</td><td>0.315</td><td>0.234</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T17:30:00Z</td><td>Spagna - La Liga</td><td>Sociedad – Levante</td><td>0.528</td><td>0.222</td><td>0.249</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T17:30:00Z</td><td>Spagna - Segunda</td><td>Castellon – Sp Gijon</td><td>0.544</td><td>0.235</td><td>0.219</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T17:00:00Z</td><td>Italia - Serie A</td><td>Lecce – Juventus</td><td>0.157</td><td>0.259</td><td>0.583</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:30:00Z</td><td>Germania - Bundesliga</td><td>Freiburg – Bayern Munich</td><td>0.142</td><td>0.163</td><td>0.694</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:30:00Z</td><td>Inghilterra - Premier League</td><td>Sunderland – Leeds</td><td>0.315</td><td>0.311</td><td>0.373</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Angers – Lorient</td><td>0.282</td><td>0.290</td><td>0.427</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Auxerre – Le Mans</td><td>0.481</td><td>0.233</td><td>0.285</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Marseille – Le Havre</td><td>0.673</td><td>0.194</td><td>0.132</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Rennes – Strasbourg</td><td>0.465</td><td>0.221</td><td>0.313</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Toulouse – Troyes</td><td>0.746</td><td>0.164</td><td>0.089</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:15:00Z</td><td>Italia - Serie B</td><td>Verona – Pisa</td><td>0.354</td><td>0.224</td><td>0.420</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:00:00Z</td><td>Grecia - Super League</td><td>Volos NFC – Panathinaikos</td><td>0.129</td><td>0.246</td><td>0.623</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Goztep – Corum</td><td>0.396</td><td>0.232</td><td>0.371</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T15:45:00Z</td><td>Olanda - Eredivisie</td><td>Sparta Rotterdam – Ajax</td><td>0.193</td><td>0.231</td><td>0.575</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T15:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Estoril – Moreirense</td><td>0.469</td><td>0.243</td><td>0.287</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T15:15:00Z</td><td>Spagna - La Liga</td><td>Celta – Betis</td><td>0.418</td><td>0.261</td><td>0.319</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T15:15:00Z</td><td>Spagna - Segunda</td><td>Albacete – Eldense</td><td>0.442</td><td>0.258</td><td>0.299</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T15:15:00Z</td><td>Spagna - Segunda</td><td>Cadiz – Ceuta</td><td>0.491</td><td>0.251</td><td>0.256</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T15:00:00Z</td><td>Belgio - Pro League</td><td>Club Brugge – St Truiden</td><td>0.730</td><td>0.160</td><td>0.109</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:30:00Z</td><td>Germania - Bundesliga</td><td>Hoffenheim – Leverkusen</td><td>0.279</td><td>0.214</td><td>0.505</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Crystal Palace – Newcastle</td><td>0.354</td><td>0.261</td><td>0.384</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Hull – Brentford</td><td>0.387</td><td>0.305</td><td>0.307</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Liverpool – Brighton</td><td>0.449</td><td>0.253</td><td>0.296</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Man United – Bournemouth</td><td>0.451</td><td>0.259</td><td>0.289</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Francia - Ligue 1</td><td>Monaco – Lille</td><td>0.400</td><td>0.273</td><td>0.325</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Grecia - Super League</td><td>Olympiakos – Kalamata</td><td>0.700</td><td>0.207</td><td>0.092</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Italia - Serie A</td><td>Atalanta – Frosinone</td><td>0.554</td><td>0.219</td><td>0.226</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Italia - Serie A</td><td>Genoa – Venezia</td><td>0.499</td><td>0.271</td><td>0.229</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Italia - Serie B</td><td>Palermo – Carrarese</td><td>0.607</td><td>0.244</td><td>0.147</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Scozia - Premiership</td><td>Motherwell – Hearts</td><td>0.347</td><td>0.257</td><td>0.394</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T13:30:00Z</td><td>Olanda - Eredivisie</td><td>Nijmegen – Groningen</td><td>0.497</td><td>0.238</td><td>0.264</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T13:30:00Z</td><td>Olanda - Eredivisie</td><td>PSV Eindhoven – Feyenoord</td><td>0.529</td><td>0.207</td><td>0.263</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T13:00:00Z</td><td>Spagna - La Liga</td><td>Ath Bilbao – Getafe</td><td>0.468</td><td>0.333</td><td>0.197</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T13:00:00Z</td><td>Spagna - Segunda</td><td>Sabadell – Tenerife</td><td>0.526</td><td>0.312</td><td>0.160</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T13:00:00Z</td><td>Turchia - Süper Lig</td><td>Konyaspor – Genclerbirligi</td><td>0.449</td><td>0.311</td><td>0.238</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T12:30:00Z</td><td>Belgio - Pro League</td><td>Genk – Standard</td><td>0.530</td><td>0.266</td><td>0.203</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T12:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Braunschweig – Hannover</td><td>0.292</td><td>0.270</td><td>0.436</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T12:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Holstein Kiel – Dresden</td><td>0.438</td><td>0.262</td><td>0.299</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T12:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Osnabruck – Greuther Furth</td><td>0.377</td><td>0.246</td><td>0.375</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T12:00:00Z</td><td>Scozia - Premiership</td><td>Hibernian – Celtic</td><td>0.219</td><td>0.228</td><td>0.552</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T11:30:00Z</td><td>Italia - Serie A</td><td>Inter – Fiorentina</td><td>0.738</td><td>0.154</td><td>0.107</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-25T11:15:00Z</td><td>Olanda - Eredivisie</td><td>For Sittard – Excelsior</td><td>0.418</td><td>0.261</td><td>0.320</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T19:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Gil Vicente – Porto</td><td>0.162</td><td>0.249</td><td>0.587</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T19:00:00Z</td><td>Olanda - Eredivisie</td><td>Den Haag – Heerenveen</td><td>0.295</td><td>0.260</td><td>0.444</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T19:00:00Z</td><td>Spagna - La Liga</td><td>Ath Madrid – La Coruna</td><td>0.661</td><td>0.200</td><td>0.137</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T19:00:00Z</td><td>Spagna - Segunda</td><td>Almeria – Oviedo</td><td>0.487</td><td>0.236</td><td>0.275</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T18:45:00Z</td><td>Belgio - Pro League</td><td>RAAL La Louviere – Waregem</td><td>0.283</td><td>0.271</td><td>0.444</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T18:45:00Z</td><td>Belgio - Pro League</td><td>Westerlo – Beveren</td><td>0.658</td><td>0.188</td><td>0.153</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T18:45:00Z</td><td>Francia - Ligue 1</td><td>Lens – Paris FC</td><td>0.511</td><td>0.247</td><td>0.241</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T18:45:00Z</td><td>Francia - Ligue 2</td><td>St Etienne – Nantes</td><td>0.766</td><td>0.141</td><td>0.091</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T18:45:00Z</td><td>Italia - Serie A</td><td>Lazio – Parma</td><td>0.571</td><td>0.266</td><td>0.162</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T18:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Nurnberg – Kaiserslautern</td><td>0.466</td><td>0.252</td><td>0.280</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T17:30:00Z</td><td>Italia - Serie B</td><td>Arezzo – Benevento</td><td>0.257</td><td>0.283</td><td>0.458</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T17:00:00Z</td><td>Grecia - Super League</td><td>AEK – Panetolikos</td><td>0.770</td><td>0.179</td><td>0.049</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T17:00:00Z</td><td>Portogallo - Primeira Liga</td><td>Alverca – Arouca</td><td>0.407</td><td>0.242</td><td>0.349</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:45:00Z</td><td>Olanda - Eredivisie</td><td>Willem II – Cambuur</td><td>0.321</td><td>0.245</td><td>0.433</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:30:00Z</td><td>Germania - Bundesliga</td><td>Dortmund – Ein Frankfurt</td><td>0.676</td><td>0.179</td><td>0.143</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:30:00Z</td><td>Inghilterra - Premier League</td><td>Chelsea – Tottenham</td><td>0.574</td><td>0.221</td><td>0.203</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:30:00Z</td><td>Inghilterra - National League</td><td>Kidderminster – Worthing</td><td>0.321</td><td>0.271</td><td>0.406</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:30:00Z</td><td>Grecia - Super League</td><td>Asteras Tripolis – Levadeiakos</td><td>0.320</td><td>0.292</td><td>0.386</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:30:00Z</td><td>Spagna - La Liga</td><td>Valencia – Villarreal</td><td>0.296</td><td>0.257</td><td>0.446</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:30:00Z</td><td>Spagna - Segunda</td><td>Girona – Celta B</td><td>0.684</td><td>0.178</td><td>0.137</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:30:00Z</td><td>Spagna - Segunda</td><td>Las Palmas – Sociedad B</td><td>0.573</td><td>0.220</td><td>0.206</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:15:00Z</td><td>Belgio - Pro League</td><td>Oud-Heverlee Leuven – Lommel SK</td><td>0.271</td><td>0.329</td><td>0.399</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:00:00Z</td><td>Grecia - Super League</td><td>Iraklis – Kifisia</td><td>0.528</td><td>0.303</td><td>0.167</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:00:00Z</td><td>Italia - Serie A</td><td>Napoli – Roma</td><td>0.313</td><td>0.298</td><td>0.387</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Samsunspor – Amedspor</td><td>0.223</td><td>0.222</td><td>0.554</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T15:15:00Z</td><td>Italia - Serie B</td><td>Catanzaro – Ascoli</td><td>0.384</td><td>0.323</td><td>0.292</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:30:00Z</td><td>Olanda - Eredivisie</td><td>Utrecht – Zwolle</td><td>0.624</td><td>0.210</td><td>0.164</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Estrela – Casa Pia</td><td>0.473</td><td>0.257</td><td>0.269</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:15:00Z</td><td>Spagna - La Liga</td><td>Santander – Espanol</td><td>0.364</td><td>0.227</td><td>0.408</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:15:00Z</td><td>Spagna - Segunda</td><td>Leganes – Mallorca</td><td>0.162</td><td>0.350</td><td>0.486</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Belgio - Pro League</td><td>Antwerp – Charleroi</td><td>0.353</td><td>0.287</td><td>0.358</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Arsenal – Everton</td><td>0.634</td><td>0.252</td><td>0.113</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Coventry – Fulham</td><td>0.284</td><td>0.289</td><td>0.426</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Championship</td><td>Blackburn – Wrexham</td><td>0.373</td><td>0.271</td><td>0.355</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Championship</td><td>Cardiff – Birmingham</td><td>0.315</td><td>0.261</td><td>0.423</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Championship</td><td>Lincoln – Burnley</td><td>0.177</td><td>0.255</td><td>0.567</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Championship</td><td>Preston – West Brom</td><td>0.309</td><td>0.289</td><td>0.401</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Championship</td><td>QPR – Swansea</td><td>0.371</td><td>0.279</td><td>0.349</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Championship</td><td>Stoke – Bristol City</td><td>0.398</td><td>0.285</td><td>0.315</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Championship</td><td>West Ham – Southampton</td><td>0.633</td><td>0.179</td><td>0.186</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - Championship</td><td>Wolves – Watford</td><td>0.636</td><td>0.203</td><td>0.160</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>AFC Wimbledon – Wycombe</td><td>0.239</td><td>0.245</td><td>0.514</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Blackpool – Mansfield</td><td>0.407</td><td>0.258</td><td>0.333</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Bromley – Peterboro</td><td>0.201</td><td>0.201</td><td>0.596</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Burton – Leyton Orient</td><td>0.345</td><td>0.273</td><td>0.380</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Cambridge – Plymouth</td><td>0.318</td><td>0.244</td><td>0.437</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Doncaster – Sheffield Weds</td><td>0.193</td><td>0.227</td><td>0.578</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Notts County – Stockport</td><td>0.279</td><td>0.281</td><td>0.438</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Oxford – Bradford</td><td>0.464</td><td>0.271</td><td>0.263</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Reading – Barnsley</td><td>0.584</td><td>0.204</td><td>0.211</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League One</td><td>Stevenage – Milton Keynes Dons</td><td>0.559</td><td>0.258</td><td>0.181</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League Two</td><td>Barnet – Oldham</td><td>0.501</td><td>0.241</td><td>0.257</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League Two</td><td>Chesterfield – Crewe</td><td>0.474</td><td>0.261</td><td>0.264</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League Two</td><td>Crawley Town – Tranmere</td><td>0.399</td><td>0.261</td><td>0.338</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League Two</td><td>Exeter – Fleetwood Town</td><td>0.383</td><td>0.411</td><td>0.204</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League Two</td><td>Gillingham – Grimsby</td><td>0.331</td><td>0.267</td><td>0.400</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League Two</td><td>Rochdale – Accrington</td><td>0.422</td><td>0.264</td><td>0.312</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League Two</td><td>Rotherham – Shrewsbury</td><td>0.425</td><td>0.256</td><td>0.317</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - League Two</td><td>York – Port Vale</td><td>0.461</td><td>0.268</td><td>0.269</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - National League</td><td>Aldershot – Wealdstone</td><td>0.460</td><td>0.222</td><td>0.317</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - National League</td><td>Barrow – Forest Green</td><td>0.469</td><td>0.243</td><td>0.286</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - National League</td><td>Boreham Wood – Fylde</td><td>0.658</td><td>0.176</td><td>0.164</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - National League</td><td>Hartlepool – Hornchurch</td><td>0.390</td><td>0.281</td><td>0.328</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - National League</td><td>Scunthorpe – Woking</td><td>0.422</td><td>0.249</td><td>0.327</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - National League</td><td>Solihull – Carlisle</td><td>0.245</td><td>0.215</td><td>0.538</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - National League</td><td>Southend – Halifax</td><td>0.528</td><td>0.242</td><td>0.229</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Inghilterra - National League</td><td>Yeovil – Altrincham</td><td>0.429</td><td>0.258</td><td>0.312</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Premiership</td><td>Dundee United – Aberdeen</td><td>0.443</td><td>0.270</td><td>0.285</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Premiership</td><td>Falkirk – Kilmarnock</td><td>0.515</td><td>0.231</td><td>0.253</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Premiership</td><td>Rangers – St Johnstone</td><td>0.751</td><td>0.158</td><td>0.089</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Premiership</td><td>St Mirren – Dundee</td><td>0.389</td><td>0.265</td><td>0.345</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Championship</td><td>Livingston – Arbroath</td><td>0.648</td><td>0.248</td><td>0.103</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Championship</td><td>Morton – Ayr</td><td>0.329</td><td>0.324</td><td>0.346</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Championship</td><td>Partick – Stenhousemuir</td><td>0.228</td><td>0.409</td><td>0.362</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Championship</td><td>Queens Park – Dunfermline</td><td>0.261</td><td>0.349</td><td>0.388</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - Championship</td><td>Raith Rvs – Inverness C</td><td>0.399</td><td>0.321</td><td>0.278</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - League One</td><td>Alloa – Queen of Sth</td><td>0.489</td><td>0.259</td><td>0.250</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - League One</td><td>Cove Rangers – East Kilbride</td><td>0.270</td><td>0.265</td><td>0.464</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - League One</td><td>Hamilton – East Fife</td><td>0.697</td><td>0.211</td><td>0.091</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - League One</td><td>Montrose – Peterhead</td><td>0.451</td><td>0.260</td><td>0.288</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T14:00:00Z</td><td>Scozia - League One</td><td>Ross County – Airdrie Utd</td><td>0.882</td><td>0.091</td><td>0.026</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:30:00Z</td><td>Germania - Bundesliga</td><td>Augsburg – Union Berlin</td><td>0.523</td><td>0.250</td><td>0.225</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:30:00Z</td><td>Germania - Bundesliga</td><td>FC Koln – Schalke 04</td><td>0.384</td><td>0.336</td><td>0.278</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:30:00Z</td><td>Germania - Bundesliga</td><td>Mainz – Werder Bremen</td><td>0.525</td><td>0.243</td><td>0.230</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:30:00Z</td><td>Germania - Bundesliga</td><td>Paderborn – Hamburg</td><td>0.387</td><td>0.311</td><td>0.301</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:30:00Z</td><td>Germania - Bundesliga</td><td>RB Leipzig – Elversberg</td><td>0.540</td><td>0.198</td><td>0.260</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:00:00Z</td><td>Italia - Serie A</td><td>Cagliari – Bologna</td><td>0.294</td><td>0.278</td><td>0.427</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:00:00Z</td><td>Italia - Serie A</td><td>Como – Sassuolo</td><td>0.627</td><td>0.209</td><td>0.163</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:00:00Z</td><td>Italia - Serie B</td><td>Avellino – Padova</td><td>0.455</td><td>0.307</td><td>0.237</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:00:00Z</td><td>Italia - Serie B</td><td>Cremonese – Juve Stabia</td><td>0.450</td><td>0.307</td><td>0.242</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:00:00Z</td><td>Italia - Serie B</td><td>Modena – Cesena</td><td>0.522</td><td>0.277</td><td>0.200</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:00:00Z</td><td>Italia - Serie B</td><td>Sudtirol – Sampdoria</td><td>0.463</td><td>0.307</td><td>0.229</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:00:00Z</td><td>Italia - Serie B</td><td>Virtus Entella – Mantova</td><td>0.389</td><td>0.300</td><td>0.309</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T13:00:00Z</td><td>Turchia - Süper Lig</td><td>Gaziantep – Erzurumspor</td><td>0.465</td><td>0.324</td><td>0.209</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T12:00:00Z</td><td>Francia - Ligue 2</td><td>Dijon – Rodez</td><td>0.494</td><td>0.202</td><td>0.303</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T12:00:00Z</td><td>Spagna - La Liga</td><td>Vallecano – Elche</td><td>0.453</td><td>0.274</td><td>0.271</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T12:00:00Z</td><td>Spagna - Segunda</td><td>Cordoba – Eibar</td><td>0.318</td><td>0.254</td><td>0.426</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - Premier League</td><td>Aston Villa – Man City</td><td>0.227</td><td>0.250</td><td>0.521</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - Championship</td><td>Charlton – Norwich</td><td>0.316</td><td>0.280</td><td>0.403</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - Championship</td><td>Portsmouth – Millwall</td><td>0.332</td><td>0.283</td><td>0.384</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - Championship</td><td>Sheffield United – Derby</td><td>0.500</td><td>0.255</td><td>0.243</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - League One</td><td>Huddersfield – Wigan</td><td>0.534</td><td>0.258</td><td>0.206</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - League One</td><td>Luton – Leicester</td><td>0.535</td><td>0.214</td><td>0.250</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - League Two</td><td>Bristol Rvs – Swindon</td><td>0.380</td><td>0.247</td><td>0.371</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - League Two</td><td>Cheltenham – Newport County</td><td>0.479</td><td>0.234</td><td>0.285</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - League Two</td><td>Northampton – Colchester</td><td>0.258</td><td>0.400</td><td>0.341</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - National League</td><td>Eastleigh – Boston Utd</td><td>0.396</td><td>0.253</td><td>0.349</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:30:00Z</td><td>Inghilterra - National League</td><td>Harrogate – Sutton</td><td>0.689</td><td>0.173</td><td>0.137</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:00:00Z</td><td>Germania - 2. Bundesliga</td><td>Heidenheim – Cottbus</td><td>0.490</td><td>0.197</td><td>0.311</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:00:00Z</td><td>Germania - 2. Bundesliga</td><td>Hertha – Bielefeld</td><td>0.505</td><td>0.236</td><td>0.258</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T11:00:00Z</td><td>Germania - 2. Bundesliga</td><td>Magdeburg – Karlsruhe</td><td>0.505</td><td>0.217</td><td>0.277</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-24T10:30:00Z</td><td>Turchia - Süper Lig</td><td>Eyupspor – Kasimpasa</td><td>0.302</td><td>0.292</td><td>0.405</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T19:45:00Z</td><td>Portogallo - Primeira Liga</td><td>Guimaraes – Maritimo</td><td>0.472</td><td>0.248</td><td>0.278</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T19:00:00Z</td><td>Inghilterra - Premier League</td><td>Ipswich – Nott&#x27;m Forest</td><td>0.257</td><td>0.257</td><td>0.485</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T19:00:00Z</td><td>Inghilterra - Championship</td><td>Bolton – Middlesbrough</td><td>0.332</td><td>0.251</td><td>0.416</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T19:00:00Z</td><td>Spagna - La Liga</td><td>Alaves – Malaga</td><td>0.667</td><td>0.219</td><td>0.113</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:45:00Z</td><td>Belgio - Pro League</td><td>Kortrijk – Mechelen</td><td>0.221</td><td>0.259</td><td>0.519</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:45:00Z</td><td>Inghilterra - National League</td><td>Gateshead – Tamworth</td><td>0.352</td><td>0.230</td><td>0.416</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:45:00Z</td><td>Francia - Ligue 1</td><td>Brest – Nice</td><td>0.463</td><td>0.249</td><td>0.286</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:45:00Z</td><td>Italia - Serie A</td><td>Torino – Monza</td><td>0.517</td><td>0.235</td><td>0.247</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:30:00Z</td><td>Germania - Bundesliga</td><td>Stuttgart – M&#x27;gladbach</td><td>0.663</td><td>0.185</td><td>0.150</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:30:00Z</td><td>Italia - Serie B</td><td>Empoli – Vicenza</td><td>0.538</td><td>0.240</td><td>0.221</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:30:00Z</td><td>Spagna - Segunda</td><td>Granada – Valladolid</td><td>0.505</td><td>0.249</td><td>0.245</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:00:00Z</td><td>Francia - Ligue 2</td><td>Clermont – Guingamp</td><td>0.366</td><td>0.277</td><td>0.355</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:00:00Z</td><td>Francia - Ligue 2</td><td>Dunkerque – Metz</td><td>0.329</td><td>0.236</td><td>0.433</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:00:00Z</td><td>Francia - Ligue 2</td><td>Nancy – Laval</td><td>0.449</td><td>0.270</td><td>0.280</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:00:00Z</td><td>Francia - Ligue 2</td><td>Pau FC – Grenoble</td><td>0.419</td><td>0.263</td><td>0.316</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:00:00Z</td><td>Francia - Ligue 2</td><td>Sochaux – Annecy</td><td>0.283</td><td>0.334</td><td>0.381</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T18:00:00Z</td><td>Olanda - Eredivisie</td><td>Go Ahead Eagles – Telstar</td><td>0.498</td><td>0.242</td><td>0.259</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T17:00:00Z</td><td>Turchia - Süper Lig</td><td>Alanyaspor – Kocaelispor</td><td>0.415</td><td>0.358</td><td>0.226</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T16:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Bochum – Wolfsburg</td><td>0.245</td><td>0.216</td><td>0.537</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-23T16:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Darmstadt – St Pauli</td><td>0.324</td><td>0.275</td><td>0.399</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-10-21T19:00:00Z</td><td>Inghilterra - League One</td><td>Reading – Leyton Orient</td><td>0.494</td><td>0.236</td><td>0.268</td><td>H</td><td>valutata</td><td>0.1636</td></tr>
-<tr><td>2026-10-21T18:00:00Z</td><td>Spagna - La Liga</td><td>Levante – Ath Bilbao</td><td>0.380</td><td>0.263</td><td>0.356</td><td>H</td><td>valutata</td><td>0.2555</td></tr>
-<tr><td>2026-10-20T19:00:00Z</td><td>Inghilterra - League Two</td><td>Gillingham – Port Vale</td><td>0.333</td><td>0.303</td><td>0.362</td><td>D</td><td>valutata</td><td>0.1214</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - Championship</td><td>Wolves – Portsmouth</td><td>0.606</td><td>0.208</td><td>0.184</td><td>D</td><td>valutata</td><td>0.2011</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>AFC Wimbledon – Mansfield</td><td>0.300</td><td>0.271</td><td>0.428</td><td>A</td><td>valutata</td><td>0.2087</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Blackpool – Milton Keynes Dons</td><td>0.603</td><td>0.213</td><td>0.183</td><td>H</td><td>valutata</td><td>0.0954</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Bromley – Leicester</td><td>0.313</td><td>0.223</td><td>0.463</td><td>A</td><td>valutata</td><td>0.1931</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Burton – Bradford</td><td>0.287</td><td>0.309</td><td>0.402</td><td>D</td><td>valutata</td><td>0.1225</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Cambridge – Wycombe</td><td>0.311</td><td>0.259</td><td>0.429</td><td>D</td><td>valutata</td><td>0.1407</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Doncaster – Stockport</td><td>0.250</td><td>0.251</td><td>0.497</td><td>A</td><td>valutata</td><td>0.1575</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Huddersfield – Peterboro</td><td>0.536</td><td>0.220</td><td>0.242</td><td>H</td><td>valutata</td><td>0.1368</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Luton – Barnsley</td><td>0.579</td><td>0.201</td><td>0.219</td><td>H</td><td>valutata</td><td>0.1126</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Notts County – Sheffield Weds</td><td>0.206</td><td>0.257</td><td>0.536</td><td>H</td><td>valutata</td><td>0.4591</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Oxford – Wigan</td><td>0.587</td><td>0.230</td><td>0.181</td><td>H</td><td>valutata</td><td>0.1015</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League One</td><td>Stevenage – Plymouth</td><td>0.350</td><td>0.280</td><td>0.368</td><td>H</td><td>valutata</td><td>0.2785</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Barnet – Swindon</td><td>0.570</td><td>0.209</td><td>0.220</td><td>A</td><td>valutata</td><td>0.4668</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Bristol Rvs – Salford</td><td>0.349</td><td>0.259</td><td>0.390</td><td>A</td><td>valutata</td><td>0.2470</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Cheltenham – Fleetwood Town</td><td>0.374</td><td>0.258</td><td>0.367</td><td>H</td><td>valutata</td><td>0.2633</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Chesterfield – Colchester</td><td>0.481</td><td>0.258</td><td>0.260</td><td>D</td><td>valutata</td><td>0.1495</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Crawley Town – Shrewsbury</td><td>0.439</td><td>0.277</td><td>0.282</td><td>A</td><td>valutata</td><td>0.3538</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Exeter – Crewe</td><td>0.302</td><td>0.430</td><td>0.266</td><td>H</td><td>valutata</td><td>0.2787</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Northampton – Tranmere</td><td>0.304</td><td>0.367</td><td>0.327</td><td>A</td><td>valutata</td><td>0.2720</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Rochdale – Grimsby</td><td>0.325</td><td>0.275</td><td>0.399</td><td>D</td><td>valutata</td><td>0.1326</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Rotherham – Newport County</td><td>0.444</td><td>0.240</td><td>0.314</td><td>D</td><td>valutata</td><td>0.1483</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>Walsall – Oldham</td><td>0.409</td><td>0.280</td><td>0.309</td><td>H</td><td>valutata</td><td>0.2222</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Inghilterra - League Two</td><td>York – Accrington</td><td>0.624</td><td>0.199</td><td>0.175</td><td>D</td><td>valutata</td><td>0.2107</td></tr>
-<tr><td>2026-10-20T18:45:00Z</td><td>Scozia - Championship</td><td>Dunfermline – Partick</td><td>0.301</td><td>0.354</td><td>0.343</td><td>D</td><td>valutata</td><td>0.1044</td></tr>
-<tr><td>2026-10-19T19:15:00Z</td><td>Portogallo - Primeira Liga</td><td>Sp Braga – Gil Vicente</td><td>0.555</td><td>0.243</td><td>0.201</td><td>A</td><td>valutata</td><td>0.4732</td></tr>
-<tr><td>2026-10-19T19:00:00Z</td><td>Inghilterra - Premier League</td><td>Tottenham – Coventry</td><td>0.464</td><td>0.281</td><td>0.253</td><td>H</td><td>valutata</td><td>0.1758</td></tr>
-<tr><td>2026-10-19T19:00:00Z</td><td>Inghilterra - Premier League</td><td>Tottenham – Coventry</td><td>0.464</td><td>0.281</td><td>0.253</td><td>H</td><td>valutata</td><td>0.1758</td></tr>
-<tr><td>2026-10-19T19:00:00Z</td><td>Spagna - La Liga</td><td>Getafe – Vallecano</td><td>0.359</td><td>0.356</td><td>0.283</td><td>D</td><td>valutata</td><td>0.1049</td></tr>
-<tr><td>2026-10-19T18:45:00Z</td><td>Italia - Serie A</td><td>Parma – Torino</td><td>0.326</td><td>0.304</td><td>0.368</td><td>A</td><td>valutata</td><td>0.2525</td></tr>
-<tr><td>2026-10-19T18:45:00Z</td><td>Francia - Ligue 2</td><td>Rodez – Montpellier</td><td>0.313</td><td>0.293</td><td>0.393</td><td>A</td><td>valutata</td><td>0.2329</td></tr>
-<tr><td>2026-10-19T18:45:00Z</td><td>Italia - Serie A</td><td>Parma – Torino</td><td>0.326</td><td>0.304</td><td>0.368</td><td>A</td><td>valutata</td><td>0.2525</td></tr>
-<tr><td>2026-10-19T18:30:00Z</td><td>Spagna - Segunda</td><td>Celta B – Tenerife</td><td>0.543</td><td>0.234</td><td>0.221</td><td>D</td><td>valutata</td><td>0.1723</td></tr>
-<tr><td>2026-10-19T17:00:00Z</td><td>Turchia - Süper Lig</td><td>Trabzonspor – Besiktas</td><td>0.454</td><td>0.268</td><td>0.277</td><td>H</td><td>valutata</td><td>0.1873</td></tr>
-<tr><td>2026-10-19T16:30:00Z</td><td>Italia - Serie A</td><td>Monza – Cagliari</td><td>0.268</td><td>0.259</td><td>0.472</td><td>H</td><td>valutata</td><td>0.3795</td></tr>
-<tr><td>2026-10-19T16:30:00Z</td><td>Italia - Serie A</td><td>Monza – Cagliari</td><td>0.268</td><td>0.259</td><td>0.472</td><td>H</td><td>valutata</td><td>0.3795</td></tr>
-<tr><td>2026-10-18T19:00:00Z</td><td>Spagna - La Liga</td><td>Real Madrid – Sevilla</td><td>0.766</td><td>0.148</td><td>0.084</td><td>H</td><td>valutata</td><td>0.0308</td></tr>
-<tr><td>2026-10-18T19:00:00Z</td><td>Spagna - Segunda</td><td>Burgos – Sabadell</td><td>0.309</td><td>0.374</td><td>0.316</td><td>H</td><td>valutata</td><td>0.2887</td></tr>
-<tr><td>2026-10-18T18:45:00Z</td><td>Italia - Serie A</td><td>Juventus – Lazio</td><td>0.475</td><td>0.284</td><td>0.240</td><td>A</td><td>valutata</td><td>0.4012</td></tr>
-<tr><td>2026-10-18T18:45:00Z</td><td>Francia - Ligue 1</td><td>Lyon – Nice</td><td>0.592</td><td>0.225</td><td>0.182</td><td>H</td><td>valutata</td><td>0.0997</td></tr>
-<tr><td>2026-10-18T18:45:00Z</td><td>Italia - Serie A</td><td>Juventus – Lazio</td><td>0.475</td><td>0.284</td><td>0.240</td><td>A</td><td>valutata</td><td>0.4012</td></tr>
-<tr><td>2026-10-18T18:00:00Z</td><td>Grecia - Super League</td><td>PAOK – Iraklis</td><td>0.615</td><td>0.253</td><td>0.130</td><td>H</td><td>valutata</td><td>0.0822</td></tr>
-<tr><td>2026-10-18T18:00:00Z</td><td>Olanda - Eredivisie</td><td>Nijmegen – For Sittard</td><td>0.598</td><td>0.216</td><td>0.185</td><td>D</td><td>valutata</td><td>0.1964</td></tr>
-<tr><td>2026-10-18T18:00:00Z</td><td>Olanda - Eredivisie</td><td>Twente – Utrecht</td><td>0.523</td><td>0.247</td><td>0.229</td><td>A</td><td>valutata</td><td>0.4337</td></tr>
-<tr><td>2026-10-18T17:30:00Z</td><td>Italia - Serie B</td><td>Sampdoria – Arezzo</td><td>0.542</td><td>0.265</td><td>0.192</td><td>A</td><td>valutata</td><td>0.4736</td></tr>
-<tr><td>2026-10-18T17:00:00Z</td><td>Grecia - Super League</td><td>Kifisia – Aris</td><td>0.280</td><td>0.325</td><td>0.394</td><td>A</td><td>valutata</td><td>0.2227</td></tr>
-<tr><td>2026-10-18T16:30:00Z</td><td>Spagna - La Liga</td><td>Malaga – Sociedad</td><td>0.218</td><td>0.291</td><td>0.489</td><td>A</td><td>valutata</td><td>0.1539</td></tr>
-<tr><td>2026-10-18T16:30:00Z</td><td>Spagna - Segunda</td><td>Girona – Andorra</td><td>0.613</td><td>0.210</td><td>0.175</td><td>H</td><td>valutata</td><td>0.0901</td></tr>
-<tr><td>2026-10-18T16:30:00Z</td><td>Spagna - Segunda</td><td>Valladolid – Eldense</td><td>0.468</td><td>0.271</td><td>0.260</td><td>A</td><td>valutata</td><td>0.3833</td></tr>
-<tr><td>2026-10-18T16:00:00Z</td><td>Italia - Serie A</td><td>Milan – Atalanta</td><td>0.382</td><td>0.273</td><td>0.344</td><td>H</td><td>valutata</td><td>0.2500</td></tr>
-<tr><td>2026-10-18T16:00:00Z</td><td>Italia - Serie A</td><td>Milan – Atalanta</td><td>0.382</td><td>0.273</td><td>0.344</td><td>H</td><td>valutata</td><td>0.2500</td></tr>
-<tr><td>2026-10-18T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Buyuksehyr – Gaziantep</td><td>0.619</td><td>0.223</td><td>0.157</td><td>H</td><td>valutata</td><td>0.0848</td></tr>
-<tr><td>2026-10-18T15:30:00Z</td><td>Inghilterra - Premier League</td><td>Nott&#x27;m Forest – Arsenal</td><td>0.173</td><td>0.278</td><td>0.548</td><td>A</td><td>valutata</td><td>0.1170</td></tr>
-<tr><td>2026-10-18T15:30:00Z</td><td>Germania - Bundesliga</td><td>M&#x27;gladbach – Hoffenheim</td><td>0.392</td><td>0.232</td><td>0.375</td><td>A</td><td>valutata</td><td>0.2720</td></tr>
-<tr><td>2026-10-18T15:30:00Z</td><td>Inghilterra - Premier League</td><td>Nott&#x27;m Forest – Arsenal</td><td>0.173</td><td>0.278</td><td>0.548</td><td>A</td><td>valutata</td><td>0.1170</td></tr>
-<tr><td>2026-10-18T15:15:00Z</td><td>Francia - Ligue 1</td><td>Le Havre – Auxerre</td><td>0.366</td><td>0.293</td><td>0.340</td><td>A</td><td>valutata</td><td>0.2846</td></tr>
-<tr><td>2026-10-18T15:15:00Z</td><td>Francia - Ligue 1</td><td>Lorient – Monaco</td><td>0.320</td><td>0.251</td><td>0.427</td><td>H</td><td>valutata</td><td>0.3223</td></tr>
-<tr><td>2026-10-18T15:15:00Z</td><td>Francia - Ligue 1</td><td>Paris FC – Rennes</td><td>0.431</td><td>0.251</td><td>0.316</td><td>H</td><td>valutata</td><td>0.2119</td></tr>
+<tr><td>2026-11-02T20:15:00Z</td><td>Portogallo - Primeira Liga</td><td>Benfica – Alverca</td><td>0.802</td><td>0.124</td><td>0.072</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T20:15:00Z</td><td>Portogallo - Primeira Liga</td><td>Gil Vicente – Guimaraes</td><td>0.403</td><td>0.284</td><td>0.312</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T20:00:00Z</td><td>Inghilterra - Premier League</td><td>Newcastle – Everton</td><td>0.446</td><td>0.282</td><td>0.270</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T20:00:00Z</td><td>Spagna - La Liga</td><td>La Coruna – Osasuna</td><td>0.495</td><td>0.268</td><td>0.236</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T20:00:00Z</td><td>Spagna - Segunda</td><td>Mallorca – Cadiz</td><td>0.628</td><td>0.261</td><td>0.109</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 1</td><td>Lorient – Brest</td><td>0.435</td><td>0.264</td><td>0.300</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 2</td><td>Red Star – Nancy</td><td>0.459</td><td>0.272</td><td>0.268</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 2</td><td>Reims – Sochaux</td><td>0.623</td><td>0.236</td><td>0.140</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Italia - Serie A</td><td>Atalanta – Parma</td><td>0.625</td><td>0.232</td><td>0.142</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T17:30:00Z</td><td>Grecia - Super League</td><td>Kalamata – Iraklis</td><td>0.434</td><td>0.252</td><td>0.312</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T17:30:00Z</td><td>Italia - Serie A</td><td>Sassuolo – Fiorentina</td><td>0.349</td><td>0.247</td><td>0.403</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T17:30:00Z</td><td>Spagna - Segunda</td><td>Valladolid – Leganes</td><td>0.456</td><td>0.293</td><td>0.250</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T17:00:00Z</td><td>Turchia - Süper Lig</td><td>Genclerbirligi – Alanyaspor</td><td>0.323</td><td>0.320</td><td>0.356</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T16:00:00Z</td><td>Grecia - Super League</td><td>Atromitos – Volos NFC</td><td>0.531</td><td>0.286</td><td>0.181</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-02T15:15:00Z</td><td>Spagna - Segunda</td><td>Oviedo – Las Palmas</td><td>0.498</td><td>0.260</td><td>0.240</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-01T20:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Sp Braga – Famalicao</td><td>0.465</td><td>0.260</td><td>0.274</td><td>H</td><td>valutata</td><td>0.1804</td></tr>
+<tr><td>2026-11-01T20:00:00Z</td><td>Spagna - La Liga</td><td>Ath Bilbao – Sociedad</td><td>0.496</td><td>0.255</td><td>0.248</td><td>H</td><td>valutata</td><td>0.1578</td></tr>
+<tr><td>2026-11-01T20:00:00Z</td><td>Spagna - Segunda</td><td>Tenerife – Andorra</td><td>0.377</td><td>0.281</td><td>0.341</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-01T19:45:00Z</td><td>Italia - Serie A</td><td>Juventus – Napoli</td><td>0.363</td><td>0.293</td><td>0.343</td><td>H</td><td>valutata</td><td>0.2615</td></tr>
+<tr><td>2026-11-01T19:45:00Z</td><td>Francia - Ligue 1</td><td>Marseille – Toulouse</td><td>0.547</td><td>0.226</td><td>0.226</td><td>H</td><td>valutata</td><td>0.1281</td></tr>
+<tr><td>2026-11-01T19:45:00Z</td><td>Italia - Serie A</td><td>Juventus – Napoli</td><td>0.362</td><td>0.292</td><td>0.345</td><td>H</td><td>valutata</td><td>0.2625</td></tr>
+<tr><td>2026-11-01T18:30:00Z</td><td>Italia - Serie B</td><td>Palermo – Vicenza</td><td>0.689</td><td>0.182</td><td>0.128</td><td>H</td><td>valutata</td><td>0.0565</td></tr>
+<tr><td>2026-11-01T18:15:00Z</td><td>Belgio - Pro League</td><td>Charleroi – RAAL La Louviere</td><td>0.568</td><td>0.251</td><td>0.180</td><td>H</td><td>valutata</td><td>0.1093</td></tr>
+<tr><td>2026-11-01T18:00:00Z</td><td>Portogallo - Primeira Liga</td><td>Academico Viseu – Rio Ave</td><td>0.693</td><td>0.179</td><td>0.126</td><td>H</td><td>valutata</td><td>0.0548</td></tr>
+<tr><td>2026-11-01T18:00:00Z</td><td>Portogallo - Primeira Liga</td><td>Maritimo – Santa Clara</td><td>0.241</td><td>0.250</td><td>0.507</td><td>A</td><td>valutata</td><td>0.1503</td></tr>
+<tr><td>2026-11-01T17:30:00Z</td><td>Belgio - Pro League</td><td>Lommel SK – Gent</td><td>0.382</td><td>0.296</td><td>0.321</td><td>H</td><td>valutata</td><td>0.2426</td></tr>
+<tr><td>2026-11-01T17:30:00Z</td><td>Grecia - Super League</td><td>Panathinaikos – AEK</td><td>0.289</td><td>0.331</td><td>0.378</td><td>H</td><td>valutata</td><td>0.3239</td></tr>
+<tr><td>2026-11-01T17:30:00Z</td><td>Spagna - La Liga</td><td>Elche – Valencia</td><td>0.506</td><td>0.258</td><td>0.235</td><td>A</td><td>valutata</td><td>0.4203</td></tr>
+<tr><td>2026-11-01T17:30:00Z</td><td>Spagna - Segunda</td><td>Burgos – Castellon</td><td>0.362</td><td>0.293</td><td>0.344</td><td>D</td><td>valutata</td><td>0.1249</td></tr>
+<tr><td>2026-11-01T17:00:00Z</td><td>Italia - Serie A</td><td>Lecce – Genoa</td><td>0.269</td><td>0.308</td><td>0.421</td><td>A</td><td>valutata</td><td>0.2036</td></tr>
+<tr><td>2026-11-01T17:00:00Z</td><td>Grecia - Super League</td><td>PAOK – Asteras Tripolis</td><td>0.779</td><td>0.158</td><td>0.062</td><td>H</td><td>valutata</td><td>0.0263</td></tr>
+<tr><td>2026-11-01T17:00:00Z</td><td>Italia - Serie A</td><td>Lecce – Genoa</td><td>0.277</td><td>0.313</td><td>0.409</td><td>A</td><td>valutata</td><td>0.2129</td></tr>
+<tr><td>2026-11-01T16:30:00Z</td><td>Inghilterra - Premier League</td><td>Liverpool – Arsenal</td><td>0.260</td><td>0.289</td><td>0.449</td><td>A</td><td>valutata</td><td>0.1857</td></tr>
+<tr><td>2026-11-01T16:30:00Z</td><td>Germania - Bundesliga</td><td>Ein Frankfurt – Hamburg</td><td>0.575</td><td>0.220</td><td>0.203</td><td>H</td><td>valutata</td><td>0.1107</td></tr>
+<tr><td>2026-11-01T16:30:00Z</td><td>Inghilterra - Premier League</td><td>Liverpool – Arsenal</td><td>0.260</td><td>0.289</td><td>0.449</td><td>A</td><td>valutata</td><td>0.1857</td></tr>
+<tr><td>2026-11-01T16:15:00Z</td><td>Francia - Ligue 1</td><td>Lyon – Angers</td><td>0.674</td><td>0.209</td><td>0.116</td><td>H</td><td>valutata</td><td>0.0598</td></tr>
+<tr><td>2026-11-01T16:15:00Z</td><td>Francia - Ligue 1</td><td>Paris FC – Monaco</td><td>0.379</td><td>0.257</td><td>0.363</td><td>H</td><td>valutata</td><td>0.2586</td></tr>
+<tr><td>2026-11-01T16:15:00Z</td><td>Italia - Serie B</td><td>Verona – Carrarese</td><td>0.545</td><td>0.248</td><td>0.206</td><td>H</td><td>valutata</td><td>0.1246</td></tr>
+<tr><td>2026-11-01T16:00:00Z</td><td>Grecia - Super League</td><td>Panetolikos – OFI Crete</td><td>0.335</td><td>0.312</td><td>0.352</td><td>A</td><td>valutata</td><td>0.2661</td></tr>
+<tr><td>2026-11-01T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Kasimpasa – Besiktas</td><td>0.292</td><td>0.277</td><td>0.429</td><td>D</td><td>valutata</td><td>0.1350</td></tr>
+<tr><td>2026-11-01T15:45:00Z</td><td>Olanda - Eredivisie</td><td>Groningen – Sparta Rotterdam</td><td>0.534</td><td>0.244</td><td>0.221</td><td>A</td><td>valutata</td><td>0.4463</td></tr>
+<tr><td>2026-11-01T15:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Arouca – Nacional</td><td>0.503</td><td>0.236</td><td>0.260</td><td>H</td><td>valutata</td><td>0.1570</td></tr>
+<tr><td>2026-11-01T15:15:00Z</td><td>Spagna - La Liga</td><td>Santander – Real Madrid</td><td>0.093</td><td>0.123</td><td>0.782</td><td>A</td><td>valutata</td><td>0.0280</td></tr>
+<tr><td>2026-11-01T15:15:00Z</td><td>Spagna - Segunda</td><td>Ceuta – Sp Gijon</td><td>0.318</td><td>0.253</td><td>0.427</td><td>A</td><td>valutata</td><td>0.2142</td></tr>
+<tr><td>2026-11-01T15:00:00Z</td><td>Belgio - Pro League</td><td>St Truiden – Oud-Heverlee Leuven</td><td>0.572</td><td>0.242</td><td>0.185</td><td>A</td><td>valutata</td><td>0.4951</td></tr>
+<tr><td>2026-11-01T15:00:00Z</td><td>Grecia - Super League</td><td>Levadeiakos – Aris</td><td>0.368</td><td>0.309</td><td>0.322</td><td>H</td><td>valutata</td><td>0.2513</td></tr>
+<tr><td>2026-11-01T14:30:00Z</td><td>Germania - Bundesliga</td><td>Union Berlin – FC Koln</td><td>0.414</td><td>0.271</td><td>0.313</td><td>D</td><td>valutata</td><td>0.1350</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Italia - Serie A</td><td>Frosinone – Torino</td><td>0.556</td><td>0.202</td><td>0.241</td><td>H</td><td>valutata</td><td>0.1277</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Italia - Serie A</td><td>Lazio – Cagliari</td><td>0.568</td><td>0.245</td><td>0.186</td><td>H</td><td>valutata</td><td>0.1105</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Inghilterra - League One</td><td>Sheffield Weds – Blackpool</td><td>0.565</td><td>0.226</td><td>0.208</td><td>D</td><td>valutata</td><td>0.1816</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Francia - Ligue 1</td><td>Strasbourg – Auxerre</td><td>0.530</td><td>0.236</td><td>0.233</td><td>H</td><td>valutata</td><td>0.1373</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Italia - Serie A</td><td>Frosinone – Torino</td><td>0.500</td><td>0.218</td><td>0.280</td><td>H</td><td>valutata</td><td>0.1642</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Italia - Serie A</td><td>Lazio – Cagliari</td><td>0.566</td><td>0.245</td><td>0.187</td><td>H</td><td>valutata</td><td>0.1115</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Italia - Serie B</td><td>Arezzo – Ascoli</td><td>0.116</td><td>0.215</td><td>0.667</td><td>D</td><td>valutata</td><td>0.2298</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Italia - Serie B</td><td>Avellino – Pisa</td><td>0.294</td><td>0.271</td><td>0.434</td><td>H</td><td>valutata</td><td>0.3436</td></tr>
+<tr><td>2026-11-01T14:00:00Z</td><td>Italia - Serie B</td><td>Empoli – Juve Stabia</td><td>0.328</td><td>0.323</td><td>0.348</td><td>D</td><td>valutata</td><td>0.1145</td></tr>
+<tr><td>2026-11-01T13:30:00Z</td><td>Olanda - Eredivisie</td><td>Excelsior – Twente</td><td>0.234</td><td>0.258</td><td>0.506</td><td>A</td><td>valutata</td><td>0.1494</td></tr>
+<tr><td>2026-11-01T13:30:00Z</td><td>Olanda - Eredivisie</td><td>Telstar – Utrecht</td><td>0.336</td><td>0.260</td><td>0.402</td><td>H</td><td>valutata</td><td>0.3010</td></tr>
+<tr><td>2026-11-01T13:00:00Z</td><td>Scozia - Premiership</td><td>Falkirk – Celtic</td><td>0.182</td><td>0.209</td><td>0.608</td><td>H</td><td>valutata</td><td>0.5198</td></tr>
+<tr><td>2026-11-01T13:00:00Z</td><td>Spagna - La Liga</td><td>Getafe – Sevilla</td><td>0.360</td><td>0.330</td><td>0.308</td><td>H</td><td>valutata</td><td>0.2521</td></tr>
+<tr><td>2026-11-01T13:00:00Z</td><td>Spagna - Segunda</td><td>Eldense – Granada</td><td>0.375</td><td>0.261</td><td>0.363</td><td>A</td><td>valutata</td><td>0.2731</td></tr>
+<tr><td>2026-11-01T13:00:00Z</td><td>Turchia - Süper Lig</td><td>Buyuksehyr – Samsunspor</td><td>0.577</td><td>0.236</td><td>0.186</td><td>H</td><td>valutata</td><td>0.1068</td></tr>
+<tr><td>2026-11-01T13:00:00Z</td><td>Turchia - Süper Lig</td><td>Trabzonspor – Gaziantep</td><td>0.705</td><td>0.183</td><td>0.110</td><td>H</td><td>valutata</td><td>0.0494</td></tr>
+<tr><td>2026-11-01T12:30:00Z</td><td>Belgio - Pro League</td><td>Cercle Brugge – Antwerp</td><td>0.392</td><td>0.257</td><td>0.349</td><td>H</td><td>valutata</td><td>0.2451</td></tr>
+<tr><td>2026-11-01T12:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Greuther Furth – Holstein Kiel</td><td>0.360</td><td>0.265</td><td>0.373</td><td>H</td><td>valutata</td><td>0.2739</td></tr>
+<tr><td>2026-11-01T12:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Hannover – Dresden</td><td>0.517</td><td>0.242</td><td>0.239</td><td>H</td><td>valutata</td><td>0.1449</td></tr>
+<tr><td>2026-11-01T12:30:00Z</td><td>Germania - 2. Bundesliga</td><td>St Pauli – Nurnberg</td><td>0.488</td><td>0.273</td><td>0.237</td><td>A</td><td>valutata</td><td>0.4096</td></tr>
+<tr><td>2026-11-01T11:30:00Z</td><td>Italia - Serie A</td><td>Como – Venezia</td><td>0.733</td><td>0.181</td><td>0.085</td><td>H</td><td>valutata</td><td>0.0391</td></tr>
+<tr><td>2026-11-01T11:30:00Z</td><td>Italia - Serie A</td><td>Como – Venezia</td><td>0.734</td><td>0.180</td><td>0.085</td><td>H</td><td>valutata</td><td>0.0388</td></tr>
+<tr><td>2026-11-01T11:15:00Z</td><td>Olanda - Eredivisie</td><td>Zwolle – Den Haag</td><td>0.414</td><td>0.253</td><td>0.332</td><td>H</td><td>valutata</td><td>0.2268</td></tr>
+<tr><td>2026-11-01T10:30:00Z</td><td>Turchia - Süper Lig</td><td>Amedspor – Eyupspor</td><td>0.820</td><td>0.123</td><td>0.055</td><td>H</td><td>valutata</td><td>0.0176</td></tr>
+<tr><td>2026-10-31T20:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Porto – Estoril</td><td>0.779</td><td>0.141</td><td>0.079</td><td>H</td><td>valutata</td><td>0.0274</td></tr>
+<tr><td>2026-10-31T20:00:00Z</td><td>Inghilterra - Premier League</td><td>Aston Villa – Fulham</td><td>0.470</td><td>0.277</td><td>0.251</td><td>D</td><td>valutata</td><td>0.1423</td></tr>
+<tr><td>2026-10-31T20:00:00Z</td><td>Inghilterra - Premier League</td><td>Aston Villa – Fulham</td><td>0.470</td><td>0.277</td><td>0.251</td><td>D</td><td>valutata</td><td>0.1423</td></tr>
+<tr><td>2026-10-31T20:00:00Z</td><td>Olanda - Eredivisie</td><td>Ajax – AZ Alkmaar</td><td>0.511</td><td>0.249</td><td>0.238</td><td>H</td><td>valutata</td><td>0.1477</td></tr>
+<tr><td>2026-10-31T20:00:00Z</td><td>Olanda - Eredivisie</td><td>Cambuur – Go Ahead Eagles</td><td>0.398</td><td>0.211</td><td>0.389</td><td>H</td><td>valutata</td><td>0.2567</td></tr>
+<tr><td>2026-10-31T20:00:00Z</td><td>Spagna - La Liga</td><td>Barcelona – Alaves</td><td>0.823</td><td>0.116</td><td>0.059</td><td>H</td><td>valutata</td><td>0.0172</td></tr>
+<tr><td>2026-10-31T20:00:00Z</td><td>Spagna - Segunda</td><td>Albacete – Sabadell</td><td>0.310</td><td>0.323</td><td>0.365</td><td>H</td><td>valutata</td><td>0.3047</td></tr>
+<tr><td>2026-10-31T19:45:00Z</td><td>Italia - Serie A</td><td>Milan – Inter</td><td>0.251</td><td>0.228</td><td>0.520</td><td>H</td><td>valutata</td><td>0.4159</td></tr>
+<tr><td>2026-10-31T19:45:00Z</td><td>Belgio - Pro League</td><td>Anderlecht – Westerlo</td><td>0.523</td><td>0.227</td><td>0.249</td><td>H</td><td>valutata</td><td>0.1448</td></tr>
+<tr><td>2026-10-31T19:45:00Z</td><td>Belgio - Pro League</td><td>Beveren – St. Gilloise</td><td>0.088</td><td>0.160</td><td>0.751</td><td>A</td><td>valutata</td><td>0.0348</td></tr>
+<tr><td>2026-10-31T19:45:00Z</td><td>Francia - Ligue 1</td><td>Troyes – Le Mans</td><td>0.221</td><td>0.248</td><td>0.529</td><td>H</td><td>valutata</td><td>0.4432</td></tr>
+<tr><td>2026-10-31T19:45:00Z</td><td>Italia - Serie A</td><td>Milan – Inter</td><td>0.250</td><td>0.227</td><td>0.522</td><td>H</td><td>valutata</td><td>0.4176</td></tr>
+<tr><td>2026-10-31T19:30:00Z</td><td>Germania - 2. Bundesliga</td><td>Karlsruhe – Heidenheim</td><td>0.418</td><td>0.224</td><td>0.356</td><td>H</td><td>valutata</td><td>0.2325</td></tr>
+<tr><td>2026-10-31T19:00:00Z</td><td>Francia - Ligue 2</td><td>Guingamp – St Etienne</td><td>0.223</td><td>0.235</td><td>0.540</td><td>H</td><td>valutata</td><td>0.4472</td></tr>
+<tr><td>2026-10-31T18:30:00Z</td><td>Italia - Serie B</td><td>Sampdoria – Virtus Entella</td><td>0.365</td><td>0.334</td><td>0.299</td><td>H</td><td>valutata</td><td>0.2461</td></tr>
+<tr><td>2026-10-31T17:45:00Z</td><td>Olanda - Eredivisie</td><td>Heerenveen – Nijmegen</td><td>0.373</td><td>0.249</td><td>0.376</td><td>H</td><td>valutata</td><td>0.2672</td></tr>
+<tr><td>2026-10-31T17:45:00Z</td><td>Olanda - Eredivisie</td><td>PSV Eindhoven – Willem II</td><td>0.943</td><td>0.041</td><td>0.015</td><td>H</td><td>valutata</td><td>0.0017</td></tr>
+<tr><td>2026-10-31T17:30:00Z</td><td>Inghilterra - Premier League</td><td>Tottenham – Crystal Palace</td><td>0.441</td><td>0.270</td><td>0.288</td><td>H</td><td>valutata</td><td>0.1978</td></tr>
+<tr><td>2026-10-31T17:30:00Z</td><td>Germania - Bundesliga</td><td>Bayern Munich – Dortmund</td><td>0.638</td><td>0.189</td><td>0.171</td><td>D</td><td>valutata</td><td>0.2188</td></tr>
+<tr><td>2026-10-31T17:30:00Z</td><td>Inghilterra - Premier League</td><td>Tottenham – Crystal Palace</td><td>0.441</td><td>0.270</td><td>0.288</td><td>H</td><td>valutata</td><td>0.1978</td></tr>
+<tr><td>2026-10-31T17:30:00Z</td><td>Inghilterra - National League</td><td>Boston Utd – Scunthorpe</td><td>0.392</td><td>0.237</td><td>0.369</td><td>H</td><td>valutata</td><td>0.2524</td></tr>
+<tr><td>2026-10-31T17:30:00Z</td><td>Spagna - La Liga</td><td>Betis – Malaga</td><td>0.762</td><td>0.161</td><td>0.076</td><td>H</td><td>valutata</td><td>0.0311</td></tr>
+<tr><td>2026-10-31T17:30:00Z</td><td>Spagna - Segunda</td><td>Celta B – Cordoba</td><td>0.446</td><td>0.213</td><td>0.340</td><td>D</td><td>valutata</td><td>0.1575</td></tr>
+<tr><td>2026-10-31T17:15:00Z</td><td>Belgio - Pro League</td><td>Standard – Kortrijk</td><td>0.602</td><td>0.257</td><td>0.139</td><td>D</td><td>valutata</td><td>0.1910</td></tr>
+<tr><td>2026-10-31T17:00:00Z</td><td>Italia - Serie A</td><td>Udinese – Roma</td><td>0.160</td><td>0.226</td><td>0.612</td><td>A</td><td>valutata</td><td>0.0878</td></tr>
+<tr><td>2026-10-31T17:00:00Z</td><td>Grecia - Super League</td><td>Kifisia – Olympiakos</td><td>0.094</td><td>0.260</td><td>0.644</td><td>A</td><td>valutata</td><td>0.0677</td></tr>
+<tr><td>2026-10-31T17:00:00Z</td><td>Italia - Serie A</td><td>Udinese – Roma</td><td>0.159</td><td>0.225</td><td>0.614</td><td>A</td><td>valutata</td><td>0.0868</td></tr>
+<tr><td>2026-10-31T16:15:00Z</td><td>Italia - Serie B</td><td>Catanzaro – Padova</td><td>0.474</td><td>0.278</td><td>0.247</td><td>D</td><td>valutata</td><td>0.1431</td></tr>
+<tr><td>2026-10-31T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Fenerbahce – Goztep</td><td>0.680</td><td>0.185</td><td>0.133</td><td>A</td><td>valutata</td><td>0.6063</td></tr>
+<tr><td>2026-10-31T15:30:00Z</td><td>Olanda - Eredivisie</td><td>Feyenoord – For Sittard</td><td>0.735</td><td>0.166</td><td>0.097</td><td>D</td><td>valutata</td><td>0.2751</td></tr>
+<tr><td>2026-10-31T15:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Moreirense – Estrela</td><td>0.464</td><td>0.249</td><td>0.286</td><td>H</td><td>valutata</td><td>0.1841</td></tr>
+<tr><td>2026-10-31T15:15:00Z</td><td>Spagna - La Liga</td><td>Vallecano – Celta</td><td>0.360</td><td>0.299</td><td>0.340</td><td>H</td><td>valutata</td><td>0.2626</td></tr>
+<tr><td>2026-10-31T15:15:00Z</td><td>Spagna - Segunda</td><td>Eibar – Almeria</td><td>0.446</td><td>0.247</td><td>0.305</td><td>D</td><td>valutata</td><td>0.1463</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Bournemouth – Leeds</td><td>0.429</td><td>0.285</td><td>0.285</td><td>H</td><td>valutata</td><td>0.2036</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Brentford – Nott&#x27;m Forest</td><td>0.466</td><td>0.273</td><td>0.260</td><td>H</td><td>valutata</td><td>0.1764</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Coventry – Sunderland</td><td>0.274</td><td>0.323</td><td>0.401</td><td>H</td><td>valutata</td><td>0.3435</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Hull – Ipswich</td><td>0.596</td><td>0.248</td><td>0.154</td><td>D</td><td>valutata</td><td>0.1901</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Man City – Brighton</td><td>0.572</td><td>0.233</td><td>0.194</td><td>A</td><td>valutata</td><td>0.4882</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Belgio - Pro League</td><td>Mechelen – Genk</td><td>0.325</td><td>0.258</td><td>0.416</td><td>H</td><td>valutata</td><td>0.3141</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Bournemouth – Leeds</td><td>0.429</td><td>0.285</td><td>0.285</td><td>H</td><td>valutata</td><td>0.2036</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Brentford – Nott&#x27;m Forest</td><td>0.466</td><td>0.273</td><td>0.260</td><td>H</td><td>valutata</td><td>0.1764</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Coventry – Sunderland</td><td>0.274</td><td>0.323</td><td>0.401</td><td>H</td><td>valutata</td><td>0.3435</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Hull – Ipswich</td><td>0.596</td><td>0.248</td><td>0.154</td><td>D</td><td>valutata</td><td>0.1901</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Premier League</td><td>Man City – Brighton</td><td>0.572</td><td>0.233</td><td>0.194</td><td>A</td><td>valutata</td><td>0.4882</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Championship</td><td>Bolton – Bristol City</td><td>0.376</td><td>0.261</td><td>0.361</td><td>A</td><td>valutata</td><td>0.2747</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Championship</td><td>Burnley – Portsmouth</td><td>0.558</td><td>0.243</td><td>0.198</td><td>D</td><td>valutata</td><td>0.1756</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Championship</td><td>Middlesbrough – Charlton</td><td>0.626</td><td>0.226</td><td>0.147</td><td>H</td><td>valutata</td><td>0.0806</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Championship</td><td>Millwall – Derby</td><td>0.485</td><td>0.271</td><td>0.242</td><td>H</td><td>valutata</td><td>0.1616</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Championship</td><td>Southampton – QPR</td><td>0.628</td><td>0.203</td><td>0.168</td><td>H</td><td>valutata</td><td>0.0830</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Championship</td><td>Swansea – Blackburn</td><td>0.438</td><td>0.292</td><td>0.268</td><td>H</td><td>valutata</td><td>0.1934</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Championship</td><td>West Ham – West Brom</td><td>0.700</td><td>0.172</td><td>0.127</td><td>A</td><td>valutata</td><td>0.6258</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - Championship</td><td>Wolves – Cardiff</td><td>0.618</td><td>0.208</td><td>0.173</td><td>H</td><td>valutata</td><td>0.0878</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League One</td><td>Barnsley – Oxford</td><td>0.250</td><td>0.224</td><td>0.525</td><td>D</td><td>valutata</td><td>0.1694</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League One</td><td>Leicester – Stevenage</td><td>0.433</td><td>0.278</td><td>0.288</td><td>D</td><td>valutata</td><td>0.1353</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League One</td><td>Mansfield – Notts County</td><td>0.467</td><td>0.275</td><td>0.257</td><td>A</td><td>valutata</td><td>0.3853</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League One</td><td>Milton Keynes Dons – Doncaster</td><td>0.438</td><td>0.260</td><td>0.300</td><td>H</td><td>valutata</td><td>0.2026</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League One</td><td>Peterboro – Luton</td><td>0.332</td><td>0.226</td><td>0.440</td><td>A</td><td>valutata</td><td>0.2116</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League One</td><td>Stockport – AFC Wimbledon</td><td>0.692</td><td>0.192</td><td>0.115</td><td>H</td><td>valutata</td><td>0.0540</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League One</td><td>Wigan – Bromley</td><td>0.639</td><td>0.220</td><td>0.140</td><td>H</td><td>valutata</td><td>0.0750</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League One</td><td>Wycombe – Burton</td><td>0.535</td><td>0.241</td><td>0.223</td><td>H</td><td>valutata</td><td>0.1327</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Accrington – Northampton</td><td>0.360</td><td>0.372</td><td>0.266</td><td>D</td><td>valutata</td><td>0.1006</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Colchester – Walsall</td><td>0.387</td><td>0.285</td><td>0.327</td><td>A</td><td>valutata</td><td>0.3015</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Crewe – Barnet</td><td>0.332</td><td>0.254</td><td>0.413</td><td>D</td><td>valutata</td><td>0.1406</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Fleetwood Town – Bristol Rvs</td><td>0.447</td><td>0.266</td><td>0.286</td><td>H</td><td>valutata</td><td>0.1935</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Oldham – Crawley Town</td><td>0.573</td><td>0.244</td><td>0.181</td><td>A</td><td>valutata</td><td>0.4992</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Salford – Exeter</td><td>0.329</td><td>0.394</td><td>0.275</td><td>H</td><td>valutata</td><td>0.2629</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Shrewsbury – Gillingham</td><td>0.375</td><td>0.281</td><td>0.342</td><td>A</td><td>valutata</td><td>0.2866</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Swindon – Rotherham</td><td>0.616</td><td>0.194</td><td>0.188</td><td>H</td><td>valutata</td><td>0.0912</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - League Two</td><td>Tranmere – Cheltenham</td><td>0.421</td><td>0.243</td><td>0.334</td><td>H</td><td>valutata</td><td>0.2233</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - National League</td><td>Aldershot – Gateshead</td><td>0.526</td><td>0.217</td><td>0.255</td><td>H</td><td>valutata</td><td>0.1448</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - National League</td><td>Altrincham – Carlisle</td><td>0.301</td><td>0.245</td><td>0.452</td><td>A</td><td>valutata</td><td>0.1953</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - National League</td><td>Barrow – Eastleigh</td><td>0.654</td><td>0.189</td><td>0.155</td><td>D</td><td>valutata</td><td>0.2264</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - National League</td><td>Boreham Wood – Hartlepool</td><td>0.694</td><td>0.175</td><td>0.130</td><td>H</td><td>valutata</td><td>0.0552</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - National League</td><td>Solihull – Kidderminster</td><td>0.327</td><td>0.291</td><td>0.381</td><td>H</td><td>valutata</td><td>0.2991</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - National League</td><td>Tamworth – Woking</td><td>0.378</td><td>0.242</td><td>0.378</td><td>A</td><td>valutata</td><td>0.2644</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - National League</td><td>Wealdstone – Southend</td><td>0.253</td><td>0.223</td><td>0.522</td><td>H</td><td>valutata</td><td>0.4151</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Inghilterra - National League</td><td>Worthing – Sutton</td><td>0.686</td><td>0.168</td><td>0.144</td><td>A</td><td>valutata</td><td>0.6014</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - Premiership</td><td>Kilmarnock – St Johnstone</td><td>0.470</td><td>0.248</td><td>0.280</td><td>D</td><td>valutata</td><td>0.1500</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - Premiership</td><td>Motherwell – St Mirren</td><td>0.568</td><td>0.241</td><td>0.190</td><td>H</td><td>valutata</td><td>0.1111</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - Championship</td><td>Arbroath – Raith Rvs</td><td>0.252</td><td>0.314</td><td>0.433</td><td>A</td><td>valutata</td><td>0.1924</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - Championship</td><td>Ayr – Queens Park</td><td>0.511</td><td>0.299</td><td>0.189</td><td>H</td><td>valutata</td><td>0.1374</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - Championship</td><td>Dunfermline – Inverness C</td><td>0.331</td><td>0.344</td><td>0.323</td><td>H</td><td>valutata</td><td>0.2758</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - Championship</td><td>Partick – Morton</td><td>0.633</td><td>0.250</td><td>0.116</td><td>A</td><td>valutata</td><td>0.5910</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League One</td><td>Airdrie Utd – Cove Rangers</td><td>0.337</td><td>0.327</td><td>0.334</td><td>A</td><td>valutata</td><td>0.2781</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League One</td><td>East Fife – Queen of Sth</td><td>0.272</td><td>0.281</td><td>0.446</td><td>H</td><td>valutata</td><td>0.3643</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League One</td><td>East Kilbride – Ross County</td><td>0.076</td><td>0.134</td><td>0.788</td><td>A</td><td>valutata</td><td>0.0251</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League One</td><td>Hamilton – Montrose</td><td>0.652</td><td>0.212</td><td>0.135</td><td>D</td><td>valutata</td><td>0.2219</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League One</td><td>Peterhead – Alloa</td><td>0.249</td><td>0.277</td><td>0.473</td><td>H</td><td>valutata</td><td>0.3937</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League Two</td><td>Edinburgh City – Dumbarton</td><td>0.470</td><td>0.249</td><td>0.279</td><td>H</td><td>valutata</td><td>0.1789</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League Two</td><td>Kelty Hearts – Elgin</td><td>0.318</td><td>0.235</td><td>0.445</td><td>A</td><td>valutata</td><td>0.2047</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League Two</td><td>Spartans – Annan Athletic</td><td>0.614</td><td>0.220</td><td>0.164</td><td>H</td><td>valutata</td><td>0.0877</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League Two</td><td>Stirling – Forfar</td><td>0.368</td><td>0.285</td><td>0.346</td><td>H</td><td>valutata</td><td>0.2595</td></tr>
+<tr><td>2026-10-31T15:00:00Z</td><td>Scozia - League Two</td><td>Stranraer – Clyde</td><td>0.427</td><td>0.273</td><td>0.299</td><td>D</td><td>valutata</td><td>0.1360</td></tr>
+<tr><td>2026-10-31T14:30:00Z</td><td>Germania - Bundesliga</td><td>Augsburg – Freiburg</td><td>0.394</td><td>0.251</td><td>0.353</td><td>A</td><td>valutata</td><td>0.2868</td></tr>
+<tr><td>2026-10-31T14:30:00Z</td><td>Germania - Bundesliga</td><td>Leverkusen – Stuttgart</td><td>0.526</td><td>0.217</td><td>0.256</td><td>A</td><td>valutata</td><td>0.4153</td></tr>
+<tr><td>2026-10-31T14:30:00Z</td><td>Germania - Bundesliga</td><td>M&#x27;gladbach – Paderborn</td><td>0.443</td><td>0.293</td><td>0.262</td><td>D</td><td>valutata</td><td>0.1328</td></tr>
+<tr><td>2026-10-31T14:30:00Z</td><td>Germania - Bundesliga</td><td>Schalke 04 – RB Leipzig</td><td>0.214</td><td>0.332</td><td>0.452</td><td>A</td><td>valutata</td><td>0.1730</td></tr>
+<tr><td>2026-10-31T14:30:00Z</td><td>Germania - Bundesliga</td><td>Werder Bremen – Hoffenheim</td><td>0.397</td><td>0.233</td><td>0.368</td><td>H</td><td>valutata</td><td>0.2498</td></tr>
+<tr><td>2026-10-31T14:00:00Z</td><td>Italia - Serie A</td><td>Bologna – Monza</td><td>0.638</td><td>0.196</td><td>0.164</td><td>H</td><td>valutata</td><td>0.0790</td></tr>
+<tr><td>2026-10-31T14:00:00Z</td><td>Italia - Serie A</td><td>Bologna – Monza</td><td>0.637</td><td>0.196</td><td>0.165</td><td>H</td><td>valutata</td><td>0.0792</td></tr>
+<tr><td>2026-10-31T14:00:00Z</td><td>Italia - Serie B</td><td>Cremonese – Benevento</td><td>0.328</td><td>0.328</td><td>0.343</td><td>H</td><td>valutata</td><td>0.2845</td></tr>
+<tr><td>2026-10-31T14:00:00Z</td><td>Italia - Serie B</td><td>Modena – Mantova</td><td>0.512</td><td>0.270</td><td>0.217</td><td>D</td><td>valutata</td><td>0.1548</td></tr>
+<tr><td>2026-10-31T14:00:00Z</td><td>Italia - Serie B</td><td>Sudtirol – Cesena</td><td>0.432</td><td>0.296</td><td>0.270</td><td>D</td><td>valutata</td><td>0.1303</td></tr>
+<tr><td>2026-10-31T13:00:00Z</td><td>Francia - Ligue 2</td><td>Annecy – Montpellier</td><td>0.297</td><td>0.312</td><td>0.389</td><td>A</td><td>valutata</td><td>0.2309</td></tr>
+<tr><td>2026-10-31T13:00:00Z</td><td>Spagna - La Liga</td><td>Levante – Ath Madrid</td><td>0.260</td><td>0.243</td><td>0.495</td><td>A</td><td>valutata</td><td>0.1611</td></tr>
+<tr><td>2026-10-31T13:00:00Z</td><td>Spagna - Segunda</td><td>Sociedad B – Girona</td><td>0.187</td><td>0.211</td><td>0.600</td><td>H</td><td>valutata</td><td>0.5098</td></tr>
+<tr><td>2026-10-31T13:00:00Z</td><td>Turchia - Süper Lig</td><td>Kocaelispor – Rizespor</td><td>0.408</td><td>0.324</td><td>0.266</td><td>D</td><td>valutata</td><td>0.1190</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - Premier League</td><td>Chelsea – Man United</td><td>0.460</td><td>0.246</td><td>0.292</td><td>H</td><td>valutata</td><td>0.1881</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - Premier League</td><td>Chelsea – Man United</td><td>0.460</td><td>0.246</td><td>0.292</td><td>H</td><td>valutata</td><td>0.1881</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - Championship</td><td>Lincoln – Birmingham</td><td>0.305</td><td>0.277</td><td>0.417</td><td>A</td><td>valutata</td><td>0.2165</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - Championship</td><td>Norwich – Watford</td><td>0.559</td><td>0.234</td><td>0.206</td><td>H</td><td>valutata</td><td>0.1182</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - Championship</td><td>Stoke – Preston</td><td>0.482</td><td>0.272</td><td>0.245</td><td>H</td><td>valutata</td><td>0.1641</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - League One</td><td>Bradford – Huddersfield</td><td>0.414</td><td>0.296</td><td>0.288</td><td>A</td><td>valutata</td><td>0.3389</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - League One</td><td>Leyton Orient – Cambridge</td><td>0.507</td><td>0.247</td><td>0.245</td><td>H</td><td>valutata</td><td>0.1515</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - League One</td><td>Plymouth – Reading</td><td>0.445</td><td>0.231</td><td>0.323</td><td>D</td><td>valutata</td><td>0.1515</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - League Two</td><td>Grimsby – York</td><td>0.407</td><td>0.241</td><td>0.350</td><td>H</td><td>valutata</td><td>0.2370</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - League Two</td><td>Port Vale – Rochdale</td><td>0.573</td><td>0.248</td><td>0.178</td><td>H</td><td>valutata</td><td>0.1066</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - National League</td><td>Forest Green – Harrogate</td><td>0.418</td><td>0.230</td><td>0.351</td><td>D</td><td>valutata</td><td>0.1490</td></tr>
+<tr><td>2026-10-31T12:30:00Z</td><td>Inghilterra - National League</td><td>Halifax – Yeovil</td><td>0.457</td><td>0.257</td><td>0.284</td><td>H</td><td>valutata</td><td>0.1874</td></tr>
+<tr><td>2026-10-31T12:00:00Z</td><td>Germania - 2. Bundesliga</td><td>Darmstadt – Magdeburg</td><td>0.425</td><td>0.235</td><td>0.338</td><td>D</td><td>valutata</td><td>0.1480</td></tr>
+<tr><td>2026-10-31T12:00:00Z</td><td>Germania - 2. Bundesliga</td><td>Kaiserslautern – Hertha</td><td>0.425</td><td>0.269</td><td>0.305</td><td>A</td><td>valutata</td><td>0.3318</td></tr>
+<tr><td>2026-10-31T12:00:00Z</td><td>Germania - 2. Bundesliga</td><td>Wolfsburg – Osnabruck</td><td>0.782</td><td>0.123</td><td>0.093</td><td>H</td><td>valutata</td><td>0.0280</td></tr>
+<tr><td>2026-10-31T10:30:00Z</td><td>Turchia - Süper Lig</td><td>Erzurumspor – Corum</td><td>0.307</td><td>0.277</td><td>0.415</td><td>A</td><td>valutata</td><td>0.2180</td></tr>
+<tr><td>2026-10-29T19:45:00Z</td><td>Italia - Serie A</td><td>Fiorentina – Atalanta</td><td>0.271</td><td>0.246</td><td>0.481</td><td>D</td><td>valutata</td><td>0.1530</td></tr>
+<tr><td>2026-10-29T19:45:00Z</td><td>Italia - Serie A</td><td>Fiorentina – Atalanta</td><td>0.262</td><td>0.250</td><td>0.486</td><td>D</td><td>valutata</td><td>0.1531</td></tr>
+<tr><td>2026-10-29T17:30:00Z</td><td>Italia - Serie A</td><td>Frosinone – Lecce</td><td>0.602</td><td>0.214</td><td>0.183</td><td>H</td><td>valutata</td><td>0.0957</td></tr>
+<tr><td>2026-10-29T17:30:00Z</td><td>Italia - Serie A</td><td>Frosinone – Lecce</td><td>0.561</td><td>0.240</td><td>0.197</td><td>H</td><td>valutata</td><td>0.1157</td></tr>
+<tr><td>2026-10-28T20:00:00Z</td><td>Scozia - Premiership</td><td>Hearts – Rangers</td><td>0.387</td><td>0.246</td><td>0.365</td><td>D</td><td>valutata</td><td>0.1420</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Italia - Serie A</td><td>Genoa – Juventus</td><td>0.204</td><td>0.271</td><td>0.523</td><td>H</td><td>valutata</td><td>0.4531</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Italia - Serie A</td><td>Monza – Napoli</td><td>0.152</td><td>0.199</td><td>0.647</td><td>A</td><td>valutata</td><td>0.0739</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Inghilterra - National League</td><td>Carlisle – Harrogate</td><td>0.427</td><td>0.224</td><td>0.348</td><td>H</td><td>valutata</td><td>0.2244</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Inghilterra - National League</td><td>Forest Green – Eastleigh</td><td>0.608</td><td>0.210</td><td>0.181</td><td>H</td><td>valutata</td><td>0.0932</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Inghilterra - National League</td><td>Sutton – Aldershot</td><td>0.412</td><td>0.239</td><td>0.347</td><td>H</td><td>valutata</td><td>0.2330</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Italia - Serie A</td><td>Genoa – Juventus</td><td>0.209</td><td>0.269</td><td>0.521</td><td>H</td><td>valutata</td><td>0.4485</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Italia - Serie A</td><td>Monza – Napoli</td><td>0.153</td><td>0.210</td><td>0.635</td><td>A</td><td>valutata</td><td>0.0781</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>Aberdeen – Falkirk</td><td>0.414</td><td>0.269</td><td>0.316</td><td>A</td><td>valutata</td><td>0.3191</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>Celtic – Dundee United</td><td>0.796</td><td>0.131</td><td>0.071</td><td>D</td><td>valutata</td><td>0.3200</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>Dundee – Kilmarnock</td><td>0.496</td><td>0.227</td><td>0.276</td><td>H</td><td>valutata</td><td>0.1649</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>St Johnstone – Motherwell</td><td>0.305</td><td>0.272</td><td>0.421</td><td>D</td><td>valutata</td><td>0.1355</td></tr>
+<tr><td>2026-10-28T19:45:00Z</td><td>Scozia - Premiership</td><td>St Mirren – Hibernian</td><td>0.285</td><td>0.272</td><td>0.442</td><td>D</td><td>valutata</td><td>0.1383</td></tr>
+<tr><td>2026-10-28T19:00:00Z</td><td>Italia - Serie B</td><td>Carrarese – Arezzo</td><td>0.541</td><td>0.257</td><td>0.201</td><td>H</td><td>valutata</td><td>0.1255</td></tr>
+<tr><td>2026-10-28T19:00:00Z</td><td>Italia - Serie B</td><td>Juve Stabia – Verona</td><td>0.461</td><td>0.253</td><td>0.285</td><td>A</td><td>valutata</td><td>0.3618</td></tr>
+<tr><td>2026-10-28T18:00:00Z</td><td>Italia - Serie B</td><td>Pisa – Palermo</td><td>0.409</td><td>0.270</td><td>0.319</td><td>D</td><td>valutata</td><td>0.1349</td></tr>
+<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Milan – Bologna</td><td>0.488</td><td>0.258</td><td>0.252</td><td>A</td><td>valutata</td><td>0.3983</td></tr>
+<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Parma – Udinese</td><td>0.314</td><td>0.296</td><td>0.388</td><td>D</td><td>valutata</td><td>0.1250</td></tr>
+<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Venezia – Inter</td><td>0.063</td><td>0.124</td><td>0.811</td><td>A</td><td>valutata</td><td>0.0196</td></tr>
+<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Milan – Bologna</td><td>0.493</td><td>0.256</td><td>0.249</td><td>A</td><td>valutata</td><td>0.4034</td></tr>
+<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Parma – Udinese</td><td>0.309</td><td>0.297</td><td>0.392</td><td>D</td><td>valutata</td><td>0.1251</td></tr>
+<tr><td>2026-10-28T17:30:00Z</td><td>Italia - Serie A</td><td>Venezia – Inter</td><td>0.064</td><td>0.122</td><td>0.813</td><td>A</td><td>valutata</td><td>0.0194</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Italia - Serie A</td><td>Roma – Cagliari</td><td>0.673</td><td>0.207</td><td>0.118</td><td>H</td><td>valutata</td><td>0.0602</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Italia - Serie A</td><td>Torino – Como</td><td>0.206</td><td>0.244</td><td>0.548</td><td>A</td><td>valutata</td><td>0.1233</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Leicester – Wigan</td><td>0.461</td><td>0.270</td><td>0.268</td><td>H</td><td>valutata</td><td>0.1809</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Luton – Doncaster</td><td>0.587</td><td>0.219</td><td>0.192</td><td>H</td><td>valutata</td><td>0.1034</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Milton Keynes Dons – Bromley</td><td>0.600</td><td>0.212</td><td>0.187</td><td>H</td><td>valutata</td><td>0.0972</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Oxford – Stockport</td><td>0.451</td><td>0.236</td><td>0.312</td><td>H</td><td>valutata</td><td>0.1994</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League One</td><td>Sheffield Weds – Cambridge</td><td>0.687</td><td>0.183</td><td>0.129</td><td>D</td><td>valutata</td><td>0.2443</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - League Two</td><td>Barnet – York</td><td>0.479</td><td>0.222</td><td>0.298</td><td>H</td><td>valutata</td><td>0.1801</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Altrincham – Kidderminster</td><td>0.371</td><td>0.303</td><td>0.325</td><td>D</td><td>valutata</td><td>0.1217</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Boston Utd – Gateshead</td><td>0.525</td><td>0.229</td><td>0.244</td><td>H</td><td>valutata</td><td>0.1423</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Fylde – Hartlepool</td><td>0.477</td><td>0.246</td><td>0.275</td><td>H</td><td>valutata</td><td>0.1745</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Halifax – Barrow</td><td>0.348</td><td>0.262</td><td>0.388</td><td>A</td><td>valutata</td><td>0.2477</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Hornchurch – Yeovil</td><td>0.387</td><td>0.272</td><td>0.339</td><td>A</td><td>valutata</td><td>0.2929</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Tamworth – Scunthorpe</td><td>0.384</td><td>0.229</td><td>0.386</td><td>H</td><td>valutata</td><td>0.2640</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Wealdstone – Solihull</td><td>0.465</td><td>0.225</td><td>0.309</td><td>A</td><td>valutata</td><td>0.3468</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Woking – Boreham Wood</td><td>0.294</td><td>0.234</td><td>0.471</td><td>A</td><td>valutata</td><td>0.1829</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Inghilterra - National League</td><td>Worthing – Southend</td><td>0.446</td><td>0.228</td><td>0.325</td><td>D</td><td>valutata</td><td>0.1526</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Italia - Serie A</td><td>Roma – Cagliari</td><td>0.667</td><td>0.213</td><td>0.119</td><td>H</td><td>valutata</td><td>0.0623</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Italia - Serie A</td><td>Torino – Como</td><td>0.211</td><td>0.247</td><td>0.541</td><td>A</td><td>valutata</td><td>0.1276</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Scozia - Championship</td><td>Stenhousemuir – Dunfermline</td><td>0.559</td><td>0.334</td><td>0.105</td><td>A</td><td>valutata</td><td>0.5561</td></tr>
+<tr><td>2026-10-27T19:45:00Z</td><td>Scozia - League One</td><td>Ross County – Hamilton</td><td>0.768</td><td>0.153</td><td>0.077</td><td>D</td><td>valutata</td><td>0.2987</td></tr>
+<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Ascoli – Sampdoria</td><td>0.497</td><td>0.331</td><td>0.171</td><td>H</td><td>valutata</td><td>0.1411</td></tr>
+<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Cesena – Empoli</td><td>0.426</td><td>0.290</td><td>0.282</td><td>H</td><td>valutata</td><td>0.2041</td></tr>
+<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Mantova – Cremonese</td><td>0.373</td><td>0.286</td><td>0.339</td><td>A</td><td>valutata</td><td>0.2876</td></tr>
+<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Padova – Sudtirol</td><td>0.368</td><td>0.329</td><td>0.301</td><td>H</td><td>valutata</td><td>0.2446</td></tr>
+<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Vicenza – Modena</td><td>0.271</td><td>0.263</td><td>0.464</td><td>A</td><td>valutata</td><td>0.1800</td></tr>
+<tr><td>2026-10-27T19:00:00Z</td><td>Italia - Serie B</td><td>Virtus Entella – Avellino</td><td>0.389</td><td>0.312</td><td>0.297</td><td>D</td><td>valutata</td><td>0.1202</td></tr>
+<tr><td>2026-10-27T18:00:00Z</td><td>Italia - Serie B</td><td>Benevento – Catanzaro</td><td>0.450</td><td>0.283</td><td>0.265</td><td>D</td><td>valutata</td><td>0.1368</td></tr>
+<tr><td>2026-10-27T17:30:00Z</td><td>Italia - Serie A</td><td>Sassuolo – Lazio</td><td>0.272</td><td>0.259</td><td>0.467</td><td>A</td><td>valutata</td><td>0.1788</td></tr>
+<tr><td>2026-10-27T17:30:00Z</td><td>Italia - Serie A</td><td>Sassuolo – Lazio</td><td>0.279</td><td>0.259</td><td>0.460</td><td>A</td><td>valutata</td><td>0.1844</td></tr>
+<tr><td>2026-10-26T20:00:00Z</td><td>Inghilterra - League Two</td><td>Walsall – Salford</td><td>0.416</td><td>0.273</td><td>0.310</td><td>A</td><td>valutata</td><td>0.3243</td></tr>
+<tr><td>2026-10-26T20:00:00Z</td><td>Spagna - La Liga</td><td>Sevilla – Osasuna</td><td>0.473</td><td>0.259</td><td>0.267</td><td>H</td><td>valutata</td><td>0.1744</td></tr>
+<tr><td>2026-10-26T19:45:00Z</td><td>Francia - Ligue 2</td><td>Boulogne – Reims</td><td>0.210</td><td>0.266</td><td>0.523</td><td>D</td><td>valutata</td><td>0.1592</td></tr>
+<tr><td>2026-10-26T19:45:00Z</td><td>Francia - Ligue 2</td><td>Montpellier – Red Star</td><td>0.480</td><td>0.302</td><td>0.217</td><td>H</td><td>valutata</td><td>0.1588</td></tr>
+<tr><td>2026-10-26T19:30:00Z</td><td>Francia - Ligue 1</td><td>Paris SG – Lyon</td><td>0.604</td><td>0.211</td><td>0.184</td><td>H</td><td>valutata</td><td>0.0952</td></tr>
+<tr><td>2026-10-26T19:30:00Z</td><td>Spagna - Segunda</td><td>Andorra – Burgos</td><td>0.375</td><td>0.299</td><td>0.324</td><td>A</td><td>valutata</td><td>0.2984</td></tr>
+<tr><td>2026-10-26T18:45:00Z</td><td>Portogallo - Primeira Liga</td><td>Santa Clara – Benfica</td><td>0.173</td><td>0.238</td><td>0.588</td><td>A</td><td>valutata</td><td>0.0997</td></tr>
+<tr><td>2026-10-26T18:30:00Z</td><td>Turchia - Süper Lig</td><td>Galatasaray – Fenerbahce</td><td>0.495</td><td>0.231</td><td>0.273</td><td>H</td><td>valutata</td><td>0.1644</td></tr>
+<tr><td>2026-10-26T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Besiktas – Buyuksehyr</td><td>0.490</td><td>0.258</td><td>0.250</td><td>H</td><td>valutata</td><td>0.1611</td></tr>
+<tr><td>2026-10-26T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Rizespor – Trabzonspor</td><td>0.254</td><td>0.260</td><td>0.485</td><td>A</td><td>valutata</td><td>0.1650</td></tr>
+<tr><td>2026-10-25T20:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Sp Lisbon – Academico Viseu</td><td>0.709</td><td>0.165</td><td>0.124</td><td>A</td><td>valutata</td><td>0.6352</td></tr>
+<tr><td>2026-10-25T20:00:00Z</td><td>Spagna - La Liga</td><td>Barcelona – Real Madrid</td><td>0.562</td><td>0.207</td><td>0.229</td><td>A</td><td>valutata</td><td>0.4550</td></tr>
+<tr><td>2026-10-25T19:45:00Z</td><td>Italia - Serie A</td><td>Udinese – Milan</td><td>0.232</td><td>0.246</td><td>0.520</td><td>A</td><td>valutata</td><td>0.1417</td></tr>
+<tr><td>2026-10-25T19:45:00Z</td><td>Italia - Serie A</td><td>Udinese – Milan</td><td>0.232</td><td>0.246</td><td>0.520</td><td>A</td><td>valutata</td><td>0.1417</td></tr>
+<tr><td>2026-10-25T19:00:00Z</td><td>Olanda - Eredivisie</td><td>AZ Alkmaar – Twente</td><td>0.396</td><td>0.276</td><td>0.327</td><td>A</td><td>valutata</td><td>0.3049</td></tr>
+<tr><td>2026-10-25T18:15:00Z</td><td>Belgio - Pro League</td><td>St. Gilloise – Cercle Brugge</td><td>0.779</td><td>0.152</td><td>0.067</td><td>H</td><td>valutata</td><td>0.0265</td></tr>
+<tr><td>2026-10-25T18:00:00Z</td><td>Grecia - Super League</td><td>OFI Crete – PAOK</td><td>0.157</td><td>0.212</td><td>0.630</td><td>H</td><td>valutata</td><td>0.5538</td></tr>
+<tr><td>2026-10-25T18:00:00Z</td><td>Portogallo - Primeira Liga</td><td>Nacional – Sp Braga</td><td>0.210</td><td>0.228</td><td>0.561</td><td>H</td><td>valutata</td><td>0.4693</td></tr>
+<tr><td>2026-10-25T18:00:00Z</td><td>Portogallo - Primeira Liga</td><td>Rio Ave – Famalicao</td><td>0.257</td><td>0.263</td><td>0.478</td><td>A</td><td>valutata</td><td>0.1690</td></tr>
+<tr><td>2026-10-25T17:30:00Z</td><td>Belgio - Pro League</td><td>Gent – Anderlecht</td><td>0.406</td><td>0.274</td><td>0.319</td><td>H</td><td>valutata</td><td>0.2275</td></tr>
+<tr><td>2026-10-25T17:30:00Z</td><td>Grecia - Super League</td><td>Aris – Atromitos</td><td>0.449</td><td>0.315</td><td>0.234</td><td>H</td><td>valutata</td><td>0.1788</td></tr>
+<tr><td>2026-10-25T17:30:00Z</td><td>Spagna - La Liga</td><td>Sociedad – Levante</td><td>0.528</td><td>0.222</td><td>0.249</td><td>H</td><td>valutata</td><td>0.1424</td></tr>
+<tr><td>2026-10-25T17:30:00Z</td><td>Spagna - Segunda</td><td>Castellon – Sp Gijon</td><td>0.544</td><td>0.235</td><td>0.219</td><td>H</td><td>valutata</td><td>0.1277</td></tr>
+<tr><td>2026-10-25T17:00:00Z</td><td>Italia - Serie A</td><td>Lecce – Juventus</td><td>0.157</td><td>0.259</td><td>0.583</td><td>A</td><td>valutata</td><td>0.0989</td></tr>
+<tr><td>2026-10-25T17:00:00Z</td><td>Italia - Serie A</td><td>Lecce – Juventus</td><td>0.157</td><td>0.259</td><td>0.583</td><td>A</td><td>valutata</td><td>0.0989</td></tr>
+<tr><td>2026-10-25T16:30:00Z</td><td>Inghilterra - Premier League</td><td>Sunderland – Leeds</td><td>0.315</td><td>0.311</td><td>0.373</td><td>D</td><td>valutata</td><td>0.1194</td></tr>
+<tr><td>2026-10-25T16:30:00Z</td><td>Germania - Bundesliga</td><td>Freiburg – Bayern Munich</td><td>0.142</td><td>0.163</td><td>0.694</td><td>A</td><td>valutata</td><td>0.0566</td></tr>
+<tr><td>2026-10-25T16:30:00Z</td><td>Inghilterra - Premier League</td><td>Sunderland – Leeds</td><td>0.315</td><td>0.311</td><td>0.373</td><td>D</td><td>valutata</td><td>0.1194</td></tr>
+<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Angers – Lorient</td><td>0.282</td><td>0.290</td><td>0.427</td><td>D</td><td>valutata</td><td>0.1311</td></tr>
+<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Auxerre – Le Mans</td><td>0.481</td><td>0.233</td><td>0.285</td><td>D</td><td>valutata</td><td>0.1563</td></tr>
+<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Marseille – Le Havre</td><td>0.673</td><td>0.194</td><td>0.132</td><td>H</td><td>valutata</td><td>0.0621</td></tr>
+<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Rennes – Strasbourg</td><td>0.465</td><td>0.221</td><td>0.313</td><td>H</td><td>valutata</td><td>0.1923</td></tr>
+<tr><td>2026-10-25T16:15:00Z</td><td>Francia - Ligue 1</td><td>Toulouse – Troyes</td><td>0.746</td><td>0.164</td><td>0.089</td><td>D</td><td>valutata</td><td>0.2825</td></tr>
+<tr><td>2026-10-25T16:15:00Z</td><td>Italia - Serie B</td><td>Verona – Pisa</td><td>0.354</td><td>0.224</td><td>0.420</td><td>D</td><td>valutata</td><td>0.1513</td></tr>
+<tr><td>2026-10-25T16:00:00Z</td><td>Grecia - Super League</td><td>Volos NFC – Panathinaikos</td><td>0.129</td><td>0.246</td><td>0.623</td><td>A</td><td>valutata</td><td>0.0791</td></tr>
+<tr><td>2026-10-25T16:00:00Z</td><td>Turchia - Süper Lig</td><td>Goztep – Corum</td><td>0.396</td><td>0.232</td><td>0.371</td><td>H</td><td>valutata</td><td>0.2513</td></tr>
+<tr><td>2026-10-25T15:45:00Z</td><td>Olanda - Eredivisie</td><td>Sparta Rotterdam – Ajax</td><td>0.193</td><td>0.231</td><td>0.575</td><td>A</td><td>valutata</td><td>0.1089</td></tr>
+<tr><td>2026-10-25T15:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Estoril – Moreirense</td><td>0.469</td><td>0.243</td><td>0.287</td><td>A</td><td>valutata</td><td>0.3643</td></tr>
+<tr><td>2026-10-25T15:15:00Z</td><td>Spagna - La Liga</td><td>Celta – Betis</td><td>0.418</td><td>0.261</td><td>0.319</td><td>D</td><td>valutata</td><td>0.1387</td></tr>
+<tr><td>2026-10-25T15:15:00Z</td><td>Spagna - Segunda</td><td>Albacete – Eldense</td><td>0.442</td><td>0.258</td><td>0.299</td><td>H</td><td>valutata</td><td>0.2003</td></tr>
+<tr><td>2026-10-25T15:15:00Z</td><td>Spagna - Segunda</td><td>Cadiz – Ceuta</td><td>0.491</td><td>0.251</td><td>0.256</td><td>H</td><td>valutata</td><td>0.1619</td></tr>
+<tr><td>2026-10-25T15:00:00Z</td><td>Belgio - Pro League</td><td>Club Brugge – St Truiden</td><td>0.730</td><td>0.160</td><td>0.109</td><td>H</td><td>valutata</td><td>0.0424</td></tr>
+<tr><td>2026-10-25T14:30:00Z</td><td>Germania - Bundesliga</td><td>Hoffenheim – Leverkusen</td><td>0.279</td><td>0.214</td><td>0.505</td><td>H</td><td>valutata</td><td>0.3877</td></tr>
+<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Crystal Palace – Newcastle</td><td>0.354</td><td>0.261</td><td>0.384</td><td>A</td><td>valutata</td><td>0.2525</td></tr>
+<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Hull – Brentford</td><td>0.387</td><td>0.305</td><td>0.307</td><td>D</td><td>valutata</td><td>0.1221</td></tr>
+<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Liverpool – Brighton</td><td>0.449</td><td>0.253</td><td>0.296</td><td>H</td><td>valutata</td><td>0.1951</td></tr>
+<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Man United – Bournemouth</td><td>0.451</td><td>0.259</td><td>0.289</td><td>A</td><td>valutata</td><td>0.3545</td></tr>
+<tr><td>2026-10-25T14:00:00Z</td><td>Italia - Serie A</td><td>Atalanta – Frosinone</td><td>0.554</td><td>0.219</td><td>0.226</td><td>D</td><td>valutata</td><td>0.1790</td></tr>
+<tr><td>2026-10-25T14:00:00Z</td><td>Italia - Serie A</td><td>Genoa – Venezia</td><td>0.499</td><td>0.271</td><td>0.229</td><td>H</td><td>valutata</td><td>0.1513</td></tr>
+<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Crystal Palace – Newcastle</td><td>0.354</td><td>0.261</td><td>0.384</td><td>A</td><td>valutata</td><td>0.2525</td></tr>
 </table></div></main></body></html>
