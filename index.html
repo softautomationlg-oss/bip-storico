@@ -1,34 +1,40 @@
 <!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Storico previsioni</title><style>body{font-family:system-ui,Segoe UI,Arial,sans-serif;margin:0;background:#fafafa;color:#1b1b1b}main{max-width:980px;margin:0 auto;padding:16px}h1{font-size:22px}h2{font-size:17px;margin-top:28px}.warn{background:#fff4e5;border-left:4px solid #e08a00;padding:10px 12px}table{border-collapse:collapse;width:100%;font-size:13px;background:#fff}th,td{border:1px solid #ddd;padding:5px 7px;text-align:left}th{background:#f0f0f0}.wrap{overflow-x:auto}code{font-size:12px}@media (prefers-color-scheme:dark){body{background:#151515;color:#e6e6e6}table{background:#1e1e1e}th{background:#2a2a2a}th,td{border-color:#333}.warn{background:#3a2a10}}</style></head><body><main><h1>Storico verificabile delle previsioni</h1>
-<p>Aggiornato: 2026-11-02T18:13:39Z (UTC). Tutte le previsioni registrate prima del calcio d'inizio, comprese quelle sbagliate. Scarica: <a href='storico.csv'>storico completo (CSV)</a> · <a href='integrita.csv'>catena di integrità</a>.</p>
+<p>Aggiornato: 2026-11-05T16:25:38Z (UTC). Tutte le previsioni registrate prima del calcio d'inizio, comprese quelle sbagliate. Scarica: <a href='storico.csv'>storico completo (CSV)</a> · <a href='integrita.csv'>catena di integrità</a>.</p>
 <p class='warn'>Sperimentale: nessun vantaggio sul mercato è dimostrato. Non è un invito a scommettere. Gioco vietato ai minori di 18 anni.</p>
-<h2>Test pre-registrato: il modello batte il mercato?</h2><p>Partite con esito 858/1000. Decisione solo al raggiungimento della quota.</p>
+<h2>Test pre-registrato: il modello batte il mercato?</h2><p>Partite con esito 876/1000. Decisione solo al raggiungimento della quota.</p>
 <h2>Riepilogo</h2><div class='wrap'><table><tr><th>Prodotto</th><th>Valutate</th><th>In attesa</th><th>RPS modello</th><th>Confronto con</th><th>Differenza modello − benchmark</th><th>Lettura</th></tr>
-<tr><td>Probabilità 22 divisioni (Dixon-Coles congelato, solo registro)</td><td>858</td><td>16</td><td>0.211 [0.204; 0.219]</td><td>mercato pre-partita (senza margine)</td><td>0.009 [0.004; 0.014]</td><td>modello PEGGIORE del benchmark (IC 95% interamente sopra 0)</td></tr>
-<tr><td>Probabilità Serie A / Premier League (Dixon-Coles congelato, demo)</td><td>87</td><td>3</td><td>0.201 [0.181; 0.222]</td><td>mercato pre-partita (senza margine)</td><td>0.011 [-0.003; 0.026]</td><td>nessuna differenza dimostrata (IC 95% comprende 0)</td></tr>
+<tr><td>Probabilità 22 divisioni (Dixon-Coles congelato, solo registro)</td><td>876</td><td>1</td><td>0.211 [0.204; 0.220]</td><td>mercato pre-partita (senza margine)</td><td>0.008 [0.004; 0.014]</td><td>modello PEGGIORE del benchmark (IC 95% interamente sopra 0)</td></tr>
+<tr><td>Probabilità Serie A / Premier League (Dixon-Coles congelato, demo)</td><td>90</td><td>0</td><td>0.207 [0.184; 0.234]</td><td>mercato pre-partita (senza margine)</td><td>0.011 [-0.003; 0.026]</td><td>nessuna differenza dimostrata (IC 95% comprende 0)</td></tr>
 <tr><td>Probabilità nazionali (configurazione NAT-2, demo)</td><td>88</td><td>0</td><td>0.172 [0.147; 0.200]</td><td>distribuzione uniforme (nessuna quota disponibile)</td><td>-0.057 [-0.089; -0.019]</td><td>modello MIGLIORE del benchmark (IC 95% interamente sotto 0)</td></tr>
 </table></div><p>RPS: più basso = meglio. Differenza negativa = modello migliore del benchmark.</p>
 <h2>Integrità dei registri</h2><div class='wrap'><table><tr><th>Registro</th><th>Righe</th><th>Testa SHA-256</th><th>Controllo</th></tr>
 <tr><td>demo_serie_a_pl</td><td>90</td><td><code>4b38c079d6dbbe00a37f597df3c02a8ddd0be75e86d18284a86e344eea4437bf</code></td><td>OK</td></tr>
 <tr><td>nazionali</td><td>88</td><td><code>626a8c8fea6a867075e1e3891f887e1e7d0d90d35f10b2e44211f02d7c856dd5</code></td><td>OK</td></tr>
-<tr><td>c4free_v2_pubblicati</td><td>22</td><td><code>25a1bf9277be053bac5fcffcdae93981421526a393be8ced225399847e15c127</code></td><td>OK</td></tr>
-<tr><td>modello_multilega</td><td>884</td><td><code>9a6ed57046342be12afb3ff37dcf80e961ef4e044be0780038db2940e7da3f89</code></td><td>OK</td></tr>
+<tr><td>c4free_v2_pubblicati</td><td>25</td><td><code>c20cb259045d3af00ff06a1fb3974f7acdf45edb12a5027178961ebc8056a7e8</code></td><td>OK</td></tr>
+<tr><td>modello_multilega</td><td>889</td><td><code>fe4c1e3fe8055ab6729a73dcd44de5cac810b61700cc76bae6e220fe39180dc4</code></td><td>OK</td></tr>
 </table></div>
 <h2>Ultime 300 previsioni</h2><div class='wrap'><table><tr><th>Calcio d'inizio (UTC)</th><th>Competizione</th><th>Partita</th><th>1</th><th>X</th><th>2</th><th>Esito</th><th>Stato</th><th>RPS</th></tr>
-<tr><td>2026-11-02T20:15:00Z</td><td>Portogallo - Primeira Liga</td><td>Benfica – Alverca</td><td>0.802</td><td>0.124</td><td>0.072</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T20:15:00Z</td><td>Portogallo - Primeira Liga</td><td>Gil Vicente – Guimaraes</td><td>0.403</td><td>0.284</td><td>0.312</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T20:00:00Z</td><td>Inghilterra - Premier League</td><td>Newcastle – Everton</td><td>0.446</td><td>0.282</td><td>0.270</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T20:00:00Z</td><td>Spagna - La Liga</td><td>La Coruna – Osasuna</td><td>0.495</td><td>0.268</td><td>0.236</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T20:00:00Z</td><td>Spagna - Segunda</td><td>Mallorca – Cadiz</td><td>0.628</td><td>0.261</td><td>0.109</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 1</td><td>Lorient – Brest</td><td>0.435</td><td>0.264</td><td>0.300</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 2</td><td>Red Star – Nancy</td><td>0.459</td><td>0.272</td><td>0.268</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 2</td><td>Reims – Sochaux</td><td>0.623</td><td>0.236</td><td>0.140</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T19:45:00Z</td><td>Italia - Serie A</td><td>Atalanta – Parma</td><td>0.625</td><td>0.232</td><td>0.142</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T17:30:00Z</td><td>Grecia - Super League</td><td>Kalamata – Iraklis</td><td>0.434</td><td>0.252</td><td>0.312</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T17:30:00Z</td><td>Italia - Serie A</td><td>Sassuolo – Fiorentina</td><td>0.349</td><td>0.247</td><td>0.403</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T17:30:00Z</td><td>Spagna - Segunda</td><td>Valladolid – Leganes</td><td>0.456</td><td>0.293</td><td>0.250</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T17:00:00Z</td><td>Turchia - Süper Lig</td><td>Genclerbirligi – Alanyaspor</td><td>0.323</td><td>0.320</td><td>0.356</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T16:00:00Z</td><td>Grecia - Super League</td><td>Atromitos – Volos NFC</td><td>0.531</td><td>0.286</td><td>0.181</td><td></td><td>in attesa di esito</td><td></td></tr>
-<tr><td>2026-11-02T15:15:00Z</td><td>Spagna - Segunda</td><td>Oviedo – Las Palmas</td><td>0.498</td><td>0.260</td><td>0.240</td><td></td><td>in attesa di esito</td><td></td></tr>
+<tr><td>2026-11-04T20:00:00Z</td><td>Inghilterra - Championship</td><td>Bristol City – Wolves</td><td>0.318</td><td>0.267</td><td>0.414</td><td>A</td><td>valutata</td><td>0.2222</td></tr>
+<tr><td>2026-11-04T19:45:00Z</td><td>Inghilterra - Championship</td><td>Cardiff – West Ham</td><td>0.187</td><td>0.179</td><td>0.632</td><td>D</td><td>valutata</td><td>0.2176</td></tr>
+<tr><td>2026-11-04T19:45:00Z</td><td>Inghilterra - Championship</td><td>Wrexham – Middlesbrough</td><td>0.335</td><td>0.248</td><td>0.416</td><td>H</td><td>valutata</td><td>0.3074</td></tr>
+<tr><td>2026-11-02T20:15:00Z</td><td>Portogallo - Primeira Liga</td><td>Benfica – Alverca</td><td>0.802</td><td>0.124</td><td>0.072</td><td>H</td><td>valutata</td><td>0.0221</td></tr>
+<tr><td>2026-11-02T20:15:00Z</td><td>Portogallo - Primeira Liga</td><td>Gil Vicente – Guimaraes</td><td>0.403</td><td>0.284</td><td>0.312</td><td>D</td><td>valutata</td><td>0.1300</td></tr>
+<tr><td>2026-11-02T20:00:00Z</td><td>Inghilterra - Premier League</td><td>Newcastle – Everton</td><td>0.446</td><td>0.282</td><td>0.270</td><td>A</td><td>valutata</td><td>0.3662</td></tr>
+<tr><td>2026-11-02T20:00:00Z</td><td>Inghilterra - Premier League</td><td>Newcastle – Everton</td><td>0.446</td><td>0.282</td><td>0.270</td><td>A</td><td>valutata</td><td>0.3662</td></tr>
+<tr><td>2026-11-02T20:00:00Z</td><td>Spagna - La Liga</td><td>La Coruna – Osasuna</td><td>0.495</td><td>0.268</td><td>0.236</td><td>H</td><td>valutata</td><td>0.1549</td></tr>
+<tr><td>2026-11-02T20:00:00Z</td><td>Spagna - Segunda</td><td>Mallorca – Cadiz</td><td>0.628</td><td>0.261</td><td>0.109</td><td>H</td><td>valutata</td><td>0.0751</td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Italia - Serie A</td><td>Atalanta – Parma</td><td>0.626</td><td>0.230</td><td>0.142</td><td>A</td><td>valutata</td><td>0.5643</td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 1</td><td>Lorient – Brest</td><td>0.435</td><td>0.264</td><td>0.300</td><td>A</td><td>valutata</td><td>0.3395</td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 2</td><td>Red Star – Nancy</td><td>0.459</td><td>0.272</td><td>0.268</td><td>A</td><td>valutata</td><td>0.3734</td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Francia - Ligue 2</td><td>Reims – Sochaux</td><td>0.623</td><td>0.236</td><td>0.140</td><td>H</td><td>valutata</td><td>0.0806</td></tr>
+<tr><td>2026-11-02T19:45:00Z</td><td>Italia - Serie A</td><td>Atalanta – Parma</td><td>0.625</td><td>0.232</td><td>0.142</td><td>A</td><td>valutata</td><td>0.5636</td></tr>
+<tr><td>2026-11-02T17:30:00Z</td><td>Italia - Serie A</td><td>Sassuolo – Fiorentina</td><td>0.349</td><td>0.247</td><td>0.403</td><td>A</td><td>valutata</td><td>0.2385</td></tr>
+<tr><td>2026-11-02T17:30:00Z</td><td>Grecia - Super League</td><td>Kalamata – Iraklis</td><td>0.434</td><td>0.252</td><td>0.312</td><td>D</td><td>valutata</td><td>0.1434</td></tr>
+<tr><td>2026-11-02T17:30:00Z</td><td>Italia - Serie A</td><td>Sassuolo – Fiorentina</td><td>0.349</td><td>0.247</td><td>0.403</td><td>A</td><td>valutata</td><td>0.2390</td></tr>
+<tr><td>2026-11-02T17:30:00Z</td><td>Spagna - Segunda</td><td>Valladolid – Leganes</td><td>0.456</td><td>0.293</td><td>0.250</td><td>H</td><td>valutata</td><td>0.1793</td></tr>
+<tr><td>2026-11-02T17:00:00Z</td><td>Turchia - Süper Lig</td><td>Genclerbirligi – Alanyaspor</td><td>0.323</td><td>0.320</td><td>0.356</td><td>H</td><td>valutata</td><td>0.2923</td></tr>
+<tr><td>2026-11-02T16:00:00Z</td><td>Grecia - Super League</td><td>Atromitos – Volos NFC</td><td>0.531</td><td>0.286</td><td>0.181</td><td>H</td><td>valutata</td><td>0.1263</td></tr>
+<tr><td>2026-11-02T15:15:00Z</td><td>Spagna - Segunda</td><td>Oviedo – Las Palmas</td><td>0.498</td><td>0.260</td><td>0.240</td><td>A</td><td>valutata</td><td>0.4125</td></tr>
 <tr><td>2026-11-01T20:30:00Z</td><td>Portogallo - Primeira Liga</td><td>Sp Braga – Famalicao</td><td>0.465</td><td>0.260</td><td>0.274</td><td>H</td><td>valutata</td><td>0.1804</td></tr>
 <tr><td>2026-11-01T20:00:00Z</td><td>Spagna - La Liga</td><td>Ath Bilbao – Sociedad</td><td>0.496</td><td>0.255</td><td>0.248</td><td>H</td><td>valutata</td><td>0.1578</td></tr>
 <tr><td>2026-11-01T20:00:00Z</td><td>Spagna - Segunda</td><td>Tenerife – Andorra</td><td>0.377</td><td>0.281</td><td>0.341</td><td></td><td>in attesa di esito</td><td></td></tr>
@@ -307,11 +313,5 @@
 <tr><td>2026-10-25T15:15:00Z</td><td>Spagna - Segunda</td><td>Cadiz – Ceuta</td><td>0.491</td><td>0.251</td><td>0.256</td><td>H</td><td>valutata</td><td>0.1619</td></tr>
 <tr><td>2026-10-25T15:00:00Z</td><td>Belgio - Pro League</td><td>Club Brugge – St Truiden</td><td>0.730</td><td>0.160</td><td>0.109</td><td>H</td><td>valutata</td><td>0.0424</td></tr>
 <tr><td>2026-10-25T14:30:00Z</td><td>Germania - Bundesliga</td><td>Hoffenheim – Leverkusen</td><td>0.279</td><td>0.214</td><td>0.505</td><td>H</td><td>valutata</td><td>0.3877</td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Crystal Palace – Newcastle</td><td>0.354</td><td>0.261</td><td>0.384</td><td>A</td><td>valutata</td><td>0.2525</td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Hull – Brentford</td><td>0.387</td><td>0.305</td><td>0.307</td><td>D</td><td>valutata</td><td>0.1221</td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Liverpool – Brighton</td><td>0.449</td><td>0.253</td><td>0.296</td><td>H</td><td>valutata</td><td>0.1951</td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Man United – Bournemouth</td><td>0.451</td><td>0.259</td><td>0.289</td><td>A</td><td>valutata</td><td>0.3545</td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Italia - Serie A</td><td>Atalanta – Frosinone</td><td>0.554</td><td>0.219</td><td>0.226</td><td>D</td><td>valutata</td><td>0.1790</td></tr>
-<tr><td>2026-10-25T14:00:00Z</td><td>Italia - Serie A</td><td>Genoa – Venezia</td><td>0.499</td><td>0.271</td><td>0.229</td><td>H</td><td>valutata</td><td>0.1513</td></tr>
 <tr><td>2026-10-25T14:00:00Z</td><td>Inghilterra - Premier League</td><td>Crystal Palace – Newcastle</td><td>0.354</td><td>0.261</td><td>0.384</td><td>A</td><td>valutata</td><td>0.2525</td></tr>
 </table></div></main></body></html>
